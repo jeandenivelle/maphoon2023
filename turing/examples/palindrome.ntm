@@ -1,0 +1,43 @@
+
+%alphabet a b c # 
+
+%starting Qs
+
+%accepting Acc
+
+%blank #     // Defines the blank symbol. It occurs before and after the input.
+
+%transitions
+
+Qs, a --> Qs, a, R // What is the rewrite rule: Qs a --> a Qs
+Qs, b --> Qs, b, R
+Qs, c --> Qs, c, R
+
+Qs, a --> Qe, ., S
+Qs, b --> Qe, ., S
+Qs, c --> Qe, ., S
+
+Qs, a --> Qe, a, S
+Qs, b --> Qe, b, S
+Qs, c --> Qe, c, S
+Qs, # --> Qe, #, S
+
+// Qe : We stand in the middle of a palindrome of even length.
+
+Qe, a --> Qa, ., L   // a Qe a -> Qe 
+Qe, b --> Qb, ., L   // b Qe b -> Qb
+Qe, c --> Qc, ., L
+Qe, # --> Qh, ., L
+
+Qa, a --> Qe, ., S
+Qb, b --> Qe, ., S
+Qc, c --> Qe, ., S
+Qh, # --> Acc, ., S
+
+%inputs
+ abc
+ abcba
+
+ abcbba
+ ababcbaba 
+

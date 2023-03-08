@@ -1,0 +1,44 @@
+
+// Recognizes words consisting of 1's whose length
+// has form 2^n. 
+//
+// Examples are 1, 11, 1111, 11111111, 1111111111111111
+
+%alphabet a x 
+
+%starting  q1
+
+%accepting  q3
+
+%blank  _
+
+%transitions
+
+q1, x -->  q1, x, R
+q1, a -->  q2, a, R
+q1, a -->  q4, a, R
+
+q2, x  -->  q2, x, R 
+q2, _  -->  q3, _, S
+
+q4, x  -->  q4, x, R
+q4, a  -->  q6, x, R
+
+q6, a  -->  q4, a, R
+q6, x  -->  q6, x, R
+q6, _  -->  q5, _, L
+
+q5, a  -->  q5, a, L
+q5, x  -->  q5, x, L
+q5, _  -->  q1, _, R
+
+%inputs
+   a
+   aa 
+   aaa 
+   aaaa
+   aaaaa
+   aaaaaa
+   aaaaaaa
+   aaaaaaaa
+   aaaaaaaaa

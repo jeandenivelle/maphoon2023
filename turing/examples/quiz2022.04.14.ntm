@@ -1,0 +1,40 @@
+
+%alphabet   a b c
+
+%starting   q0
+
+%accepting  q5
+
+%blank  _
+
+%transitions
+
+q0, a  -->  q1, x, R
+q0, y  -->  q4, y, R
+
+q1, a -->   q2, x, R 
+
+q2, y  -->  q2, y, R
+q2, a  -->  q2, a, R
+q2, b -->  q3, y, L
+
+q3, a  -->  q3, a, L
+q3, y  -->  q3, y, L 
+q3, x  -->  q0, x, R 
+
+q4, y  -->  q4, y, R
+q4, _  -->  q5, _, R
+
+%inputs
+   aab
+   aabaab
+   aabb
+   ab
+   aaaabbbaa
+   _
+   baba
+   aaaaaabbb
+
+%end
+
+

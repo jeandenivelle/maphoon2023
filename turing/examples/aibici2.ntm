@@ -1,0 +1,38 @@
+
+// Recognizes words of form a^i b^i c^i 
+// I think this example originates from Sipser.
+
+%alphabet a b c
+
+%starting  q1
+
+%accepting  q5
+
+%blank  _
+
+%transitions
+
+q1, a -->  q2, _, R
+q1, x -->  q1, x, R
+q1, _ -->  q5, _, S
+
+q2, a  -->  q2, a, R
+q2, x  -->  q2, x, R
+q2, b  -->  q3, x, R
+
+q3, b  -->  q3, b, R
+q3, x  -->  q3, x, R
+q3, c  -->  q4, x, L
+
+q4, a  -->  q4, a, L
+q4, b  -->  q4, b, L
+q4, x  -->  q4, x, L
+
+q4, _  -->  q1, _, R
+
+%inputs
+   aabbcc
+   aabc
+   aaaabbbbcccc
+
+
