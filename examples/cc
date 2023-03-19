@@ -1,0 +1,81 @@
+
+
+Rules:
+
+#0 :   S  =>  a, S, A
+#1 :   S  =>  A
+#2 :   S  =>  c
+#3 :   A  =>  a, b
+#4 :   A  =>  S, b
+
+
+
+
+
+Initial States:
+   S : S0
+
+
+S0 ( student q0 ) 
+   S =>  # a S A      [ 0 ] / { EOF }
+   S =>  # A      [ 1 ] / { EOF }
+   S =>  # c      [ 2 ] / { EOF }
+
+Shifts:
+   a : 4
+   A : 3
+   c : 2
+   S : 1
+
+
+S1 ( student q4 )
+   A =>  S # b      [ 4 ] / { S, a, c, A, b, EOF }
+
+Shifts:
+   b : 5
+
+
+S2 ( student q1 ) 
+   S =>  c #      [ 2 ] / { S, a, c, A, b, EOF }
+
+S3 ( student q2 ) 
+   S =>  A #      [ 1 ] / { S, a, c, A, b, EOF }
+
+S4 ( student q3 ) 
+   S =>  a # S A      [ 0 ] / { S, a, c, A, b, EOF }
+   A =>  a # b      [ 3 ] / { S, a, c, A, b, EOF }
+
+Shifts:
+   S : 7
+   b : 6
+   c : 2
+   A : 3
+   a : 4
+
+
+S5 ( student q5 )
+   A =>  S b #      [ 4 ] / { A, c, a, S, EOF, b }
+
+S6 ( student q7 ) 
+   A =>  a b #      [ 3 ] / { S, a, c, A, EOF, b }
+
+S7:
+   S =>  a S # A      [ 0 ] / { S, a, c, A, EOF, b }
+   A =>  S # b      [ 4 ] / { b, A, c, a, S }
+
+Shifts:
+   A : 8
+   c : 2
+   S : 1
+   b : 5
+   a : 4
+
+
+S8:
+   S =>  a S A #      [ 0 ] / { S, a, c, A, b, EOF }
+   S =>  A #      [ 1 ] / { b }
+
+
+
+(because of errors, no code will be generated)
+

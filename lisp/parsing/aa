@@ -1,0 +1,515 @@
+filereader( grammar.m, 72, 0 ) : %end{0A}
+lookahead: eof/4
+
+symbolcodebuilder:
+
+code for .h:
+from file grammar.m, line 14 :
+   14 :    #include "../../filereader.h" 
+   15 :    #include "../../../easycomp2022a/bigint.h" 
+   16 :    #include <vector> 
+   17 :    #include "interval.h" 
+   18 :    #include "../list/list.h" 
+
+
+namespace:
+   parsing
+
+infotype: interval
+
+code for .cpp:
+from file grammar.m, line 28 :
+   28 :   
+   29 :      {void} {print_attr}( {const} {list}::{list}& {lst}, {std}::{ostream}& {out} )
+   30 :      {
+   31 :         {lst} -> {print}( {out} ); 
+   32 :      }
+   33 :   
+
+
+declared attributes:
+   Nil : list::list
+   Inlist : list::list
+   QUOTE : void
+   ATOM : list::list
+   CHAR : list::list
+   Session : void
+   EOF : void
+   LPAR : void
+   SCANERROR : void
+   FILEBAD : void
+   WHITESPACE : void
+   INTEGER : list::list
+   COMMENT : void
+   RPAR : void
+   EMPTY : void
+   S_expr : list::list
+   FLOATING : list::list
+   LBRACE : void
+   STRING : list::list
+   RBRACE : void
+   DOT : void
+
+
+parsercodebuilder:
+
+namespace =      parsing
+source =          from file , line 37 :
+   37 :    {tok}. {read}( ); 
+
+parameters:
+   tok :       tokenizer
+
+code for .h:
+from file grammar.m, line 35 :
+   35 :    #include "tokenizer.h" 
+
+
+Start Symbols with their Lookahead Sets:
+   Session : { EOF }
+
+
+Rules:
+
+(0)   Session  =>  
+(1)   Session  =>  Session S_expr
+(2)   S_expr  =>  ATOM
+(3)   S_expr  =>  STRING
+(4)   S_expr  =>  INTEGER
+(5)   S_expr  =>  FLOATING
+(6)   S_expr  =>  Nil
+(7)   S_expr  =>  QUOTE S_expr
+(8)   S_expr  =>  LPAR Inlist RPAR
+(9)   S_expr  =>  LBRACE Inlist RBRACE
+(10)   Inlist  =>  
+(11)   Inlist  =>  DOT S_expr
+(12)   Inlist  =>  S_expr Inlist
+(13)   Nil  =>  ATOM
+
+
+
+Reduction Sequences:
+   S_expr/1, Nil/0
+
+#1: reduction( e : 1 )
+from file grammar.m, line 42 :
+   42 :    {std}::{cout} << {e} << "\n"; 
+
+#2: reduction( a : 0 )
+from file grammar.m, line 45 :
+   45 :    {return} {a}; 
+
+#3: reduction( s : 0 )
+from file grammar.m, line 46 :
+   46 :    {return} {s}; 
+
+#4: reduction( i : 0 )
+from file grammar.m, line 47 :
+   47 :    {return} {i}; 
+
+#5: reduction( f : 0 )
+from file grammar.m, line 48 :
+   48 :    {return} {f}; 
+
+#6: reduction( n : 0 )
+from file grammar.m, line 49 :
+   49 :    {return} {n}; 
+
+#7: reduction( s : 1 )
+from file grammar.m, line 50 :
+   50 :    {return} {new} {list}::{quote}( {std}::{move}({s})); 
+
+#8: reduction( lst : 1 )
+from file grammar.m, line 51 :
+   51 :    {return} {lst}; 
+
+#9: reduction( lst : 1 )
+from file grammar.m, line 52 :
+   52 :    {return} {lst}; 
+
+#10: reduction
+from file grammar.m, line 55 :
+   55 :    {return} {new} {list}::{nil}( ); 
+
+#11: reduction( e : 1 )
+from file grammar.m, line 57 :
+   57 :    {return} {e}; 
+
+#12: reduction( cdr : 1, car : 0 )
+from file grammar.m, line 58 :
+   58 :    {return} {new} {list}::{cons}( {car}, {cdr} ); 
+
+#13: reduction( a : 0 )
+? from file grammar.m, line 62 :
+   62 :   
+   63 :      {auto} {p} = {a} -> {try_cast}< {list}::{atom} > ( );
+   64 :      {return} {p} && {p} -> {s} == "nil";
+
+
+from file grammar.m, line 66 :
+   66 :    
+   67 :      {return} {new} {list}::{nil}( ); 
+
+
+
+input was read succesfully
+
+warning: the following symbols have been declared, but do not occur in the grammar:
+   { EMPTY, WHITESPACE, FILEBAD, SCANERROR, CHAR, COMMENT, _recover_ }
+starting closure
+all states have been generated
+adding reductions
+ending closure
+
+Parsetable:
+====================================
+
+Initial States:
+   Session : state 0
+
+
+state 0:
+   Session =>  #  /  { S_expr, FLOATING, LBRACE, INTEGER, ATOM, LPAR, QUOTE, Nil, STRING, EOF }
+   Session =>  # Session S_expr  /  { EOF }
+
+Shifts:
+   Session :  1
+
+Reductions:
+   EOF :  0
+   STRING :  0
+   Nil :  0
+   QUOTE :  0
+   LPAR :  0
+   ATOM :  0
+   INTEGER :  0
+   LBRACE :  0
+   FLOATING :  0
+   S_expr :  0
+
+
+state 1:
+   Session =>  Session # S_expr  /  { ATOM, INTEGER, LBRACE, FLOATING, S_expr, STRING, Nil, QUOTE, LPAR, EOF }
+
+Shifts:
+   S_expr :  10
+   FLOATING :  9
+   LBRACE :  8
+   INTEGER :  7
+   LPAR :  6
+   QUOTE :  5
+   Nil :  4
+   STRING :  3
+   ATOM :  2
+
+
+state 2:
+   S_expr =>  ATOM #  /  { EOF, LPAR, QUOTE, Nil, RBRACE, STRING, S_expr, Inlist, RPAR, FLOATING, LBRACE, INTEGER, ATOM, DOT }
+   Nil =>  ATOM #  /  { EOF, LPAR, QUOTE, Nil, RBRACE, STRING, S_expr, RPAR, Inlist, FLOATING, LBRACE, INTEGER, ATOM, DOT }
+
+Reductions:
+   DOT :  13, 2
+   EOF :  13, 2
+   LPAR :  13, 2
+   QUOTE :  13, 2
+   Nil :  13, 2
+   STRING :  13, 2
+   RBRACE :  13, 2
+   ATOM :  13, 2
+   S_expr :  13, 2
+   Inlist :  13, 2
+   RPAR :  13, 2
+   FLOATING :  13, 2
+   LBRACE :  13, 2
+   INTEGER :  13, 2
+
+
+state 3:
+   S_expr =>  STRING #  /  { EOF, LPAR, QUOTE, Nil, RBRACE, STRING, S_expr, Inlist, RPAR, FLOATING, LBRACE, INTEGER, ATOM, DOT }
+
+Reductions:
+   DOT :  3
+   EOF :  3
+   LPAR :  3
+   QUOTE :  3
+   Nil :  3
+   STRING :  3
+   RBRACE :  3
+   ATOM :  3
+   S_expr :  3
+   Inlist :  3
+   RPAR :  3
+   FLOATING :  3
+   LBRACE :  3
+   INTEGER :  3
+
+
+state 4:
+   S_expr =>  Nil #  /  { EOF, LPAR, QUOTE, Nil, RBRACE, STRING, S_expr, Inlist, RPAR, FLOATING, LBRACE, INTEGER, ATOM, DOT }
+
+Reductions:
+   DOT :  6
+   EOF :  6
+   LPAR :  6
+   QUOTE :  6
+   Nil :  6
+   STRING :  6
+   RBRACE :  6
+   ATOM :  6
+   S_expr :  6
+   Inlist :  6
+   RPAR :  6
+   FLOATING :  6
+   LBRACE :  6
+   INTEGER :  6
+
+
+state 5:
+   S_expr =>  QUOTE # S_expr  /  { EOF, LPAR, QUOTE, Nil, RBRACE, STRING, S_expr, Inlist, RPAR, FLOATING, LBRACE, INTEGER, ATOM, DOT }
+
+Shifts:
+   S_expr :  11
+   FLOATING :  9
+   QUOTE :  5
+   LPAR :  6
+   Nil :  4
+   STRING :  3
+   LBRACE :  8
+   INTEGER :  7
+   ATOM :  2
+
+
+state 6:
+   Inlist =>  #  /  { RPAR }
+   S_expr =>  LPAR # Inlist RPAR  /  { EOF, LPAR, QUOTE, Nil, RBRACE, STRING, S_expr, Inlist, RPAR, FLOATING, LBRACE, INTEGER, ATOM, DOT }
+
+Shifts:
+   Inlist :  14
+   S_expr :  13
+   FLOATING :  9
+   LPAR :  6
+   QUOTE :  5
+   Nil :  4
+   STRING :  3
+   DOT :  12
+   LBRACE :  8
+   INTEGER :  7
+   ATOM :  2
+
+Reductions:
+   RPAR :  10
+
+
+state 7:
+   S_expr =>  INTEGER #  /  { EOF, LPAR, QUOTE, Nil, RBRACE, STRING, S_expr, Inlist, RPAR, FLOATING, LBRACE, INTEGER, ATOM, DOT }
+
+Reductions:
+   DOT :  4
+   EOF :  4
+   LPAR :  4
+   QUOTE :  4
+   Nil :  4
+   STRING :  4
+   RBRACE :  4
+   ATOM :  4
+   S_expr :  4
+   Inlist :  4
+   RPAR :  4
+   FLOATING :  4
+   LBRACE :  4
+   INTEGER :  4
+
+
+state 8:
+   Inlist =>  #  /  { RBRACE }
+   S_expr =>  LBRACE # Inlist RBRACE  /  { EOF, LPAR, QUOTE, Nil, RBRACE, STRING, S_expr, Inlist, RPAR, FLOATING, LBRACE, INTEGER, ATOM, DOT }
+
+Shifts:
+   Inlist :  15
+   S_expr :  13
+   FLOATING :  9
+   LBRACE :  8
+   INTEGER :  7
+   DOT :  12
+   LPAR :  6
+   QUOTE :  5
+   Nil :  4
+   STRING :  3
+   ATOM :  2
+
+Reductions:
+   RBRACE :  10
+
+
+state 9:
+   S_expr =>  FLOATING #  /  { EOF, LPAR, QUOTE, Nil, RBRACE, STRING, S_expr, Inlist, RPAR, FLOATING, LBRACE, INTEGER, ATOM, DOT }
+
+Reductions:
+   DOT :  5
+   EOF :  5
+   LPAR :  5
+   QUOTE :  5
+   Nil :  5
+   STRING :  5
+   RBRACE :  5
+   ATOM :  5
+   S_expr :  5
+   Inlist :  5
+   RPAR :  5
+   FLOATING :  5
+   LBRACE :  5
+   INTEGER :  5
+
+
+state 10:
+   Session =>  Session S_expr #  /  { ATOM, INTEGER, LBRACE, FLOATING, S_expr, STRING, Nil, QUOTE, LPAR, EOF }
+
+Reductions:
+   EOF :  1
+   LPAR :  1
+   QUOTE :  1
+   Nil :  1
+   STRING :  1
+   S_expr :  1
+   FLOATING :  1
+   LBRACE :  1
+   INTEGER :  1
+   ATOM :  1
+
+
+state 11:
+   S_expr =>  QUOTE S_expr #  /  { DOT, EOF, LPAR, QUOTE, Nil, S_expr, Inlist, RPAR, FLOATING, LBRACE, INTEGER, ATOM, STRING, RBRACE }
+
+Reductions:
+   DOT :  7
+   EOF :  7
+   LPAR :  7
+   QUOTE :  7
+   Nil :  7
+   RBRACE :  7
+   STRING :  7
+   S_expr :  7
+   Inlist :  7
+   RPAR :  7
+   FLOATING :  7
+   LBRACE :  7
+   INTEGER :  7
+   ATOM :  7
+
+
+state 12:
+   Inlist =>  DOT # S_expr  /  { RBRACE, RPAR }
+
+Shifts:
+   S_expr :  16
+   FLOATING :  9
+   LBRACE :  8
+   INTEGER :  7
+   LPAR :  6
+   QUOTE :  5
+   Nil :  4
+   STRING :  3
+   ATOM :  2
+
+
+state 13:
+   Inlist =>  #  /  { RBRACE, RPAR }
+   Inlist =>  S_expr # Inlist  /  { RBRACE, RPAR }
+
+Shifts:
+   Inlist :  17
+   S_expr :  13
+   FLOATING :  9
+   DOT :  12
+   LBRACE :  8
+   INTEGER :  7
+   LPAR :  6
+   QUOTE :  5
+   Nil :  4
+   STRING :  3
+   ATOM :  2
+
+Reductions:
+   RPAR :  10
+   RBRACE :  10
+
+
+state 14:
+   S_expr =>  LPAR Inlist # RPAR  /  { DOT, EOF, LPAR, QUOTE, Nil, S_expr, Inlist, RPAR, FLOATING, LBRACE, INTEGER, ATOM, STRING, RBRACE }
+
+Shifts:
+   RPAR :  18
+
+
+state 15:
+   S_expr =>  LBRACE Inlist # RBRACE  /  { EOF, LPAR, QUOTE, Nil, RBRACE, STRING, S_expr, Inlist, RPAR, FLOATING, LBRACE, INTEGER, ATOM, DOT }
+
+Shifts:
+   RBRACE :  19
+
+
+state 16:
+   Inlist =>  DOT S_expr #  /  { RBRACE, RPAR }
+
+Reductions:
+   RPAR :  11
+   RBRACE :  11
+
+
+state 17:
+   Inlist =>  S_expr Inlist #  /  { RBRACE, RPAR }
+
+Reductions:
+   RPAR :  12
+   RBRACE :  12
+
+
+state 18:
+   S_expr =>  LPAR Inlist RPAR #  /  { EOF, LPAR, QUOTE, Nil, RBRACE, STRING, S_expr, Inlist, RPAR, FLOATING, LBRACE, INTEGER, ATOM, DOT }
+
+Reductions:
+   DOT :  8
+   EOF :  8
+   LPAR :  8
+   QUOTE :  8
+   Nil :  8
+   STRING :  8
+   RBRACE :  8
+   ATOM :  8
+   S_expr :  8
+   Inlist :  8
+   RPAR :  8
+   FLOATING :  8
+   LBRACE :  8
+   INTEGER :  8
+
+
+state 19:
+   S_expr =>  LBRACE Inlist RBRACE #  /  { EOF, LPAR, QUOTE, Nil, RBRACE, STRING, S_expr, Inlist, RPAR, FLOATING, LBRACE, INTEGER, ATOM, DOT }
+
+Reductions:
+   DOT :  9
+   EOF :  9
+   LPAR :  9
+   QUOTE :  9
+   Nil :  9
+   STRING :  9
+   RBRACE :  9
+   ATOM :  9
+   S_expr :  9
+   Inlist :  9
+   RPAR :  9
+   FLOATING :  9
+   LBRACE :  9
+   INTEGER :  9
+
+
+
+
+note that there are warnings
+
+symbol definition will be put in ./symbol.h and ./symbol.cpp
+
+opening file ../../idee.x
+parser definition will be put in ./parser.h and ./parser.cpp
+

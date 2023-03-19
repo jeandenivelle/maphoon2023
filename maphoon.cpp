@@ -8,7 +8,6 @@
 #include <stdexcept>
 #include <sstream>
 
-#include "filereader.h" 
 #include "tokenizing.h" 
 #include "ourownparser.h" 
 #include "symbol.h"
@@ -29,7 +28,7 @@ int main( int argc, char* argv[] )
    std::cout << e1 << "\n";
 #endif
 
-#if 1
+#if 0
    // Tests the tokenizer:
 
    filereader test( &std::cin, "STDIN" );
@@ -89,7 +88,7 @@ int main( int argc, char* argv[] )
 
    // Now we are ready to read the input:
 
-   ourownparser parse( filereader( &inputfile, inputfilename ));
+   ourownparser parse( lexing::filereader( &inputfile, inputfilename ));
    parse. maph_forward( ); 
 
    try

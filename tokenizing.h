@@ -8,7 +8,8 @@
 #include <map>
 
 #include "indentation.h"
-#include "filereader.h"
+#include "../lexing2023/includes.h"
+
 
 enum token { tok_rewrite,         // =>
              tok_bar,             // |
@@ -93,8 +94,8 @@ std::ostream& operator << ( std::ostream& out,
 namespace tokenize
 {
 
-   std::pair< token, size_t > maph( filereader& read );
-   std::pair< token, size_t > cpp( filereader& read );
+   std::pair< token, size_t > maph( lexing::filereader& read );
+   std::pair< token, size_t > cpp( lexing::filereader& read );
       // I think that inside C++ code, the tokens are always the 
       // same. It doesn't matter if it is a type definition, an include,
       // or action code. 

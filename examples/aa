@@ -1,0 +1,1321 @@
+filereader( ambiguous.m, 54, 0 ) :  (end of file)
+lookahead: eof/0
+
+symbolcodebuilder:
+
+namespace:
+   
+
+infotype: void
+
+from file , line 0 :
+   0 :   
+
+declared attributes:
+   EOF : void
+   Function : const function*
+   Arglist : std::vector<ast>
+   NUMBER : long double
+   Stat : ast
+   Expr : ast
+   E : ast
+   Infix : opcode
+   Do : void
+   Postfix : opcode
+   If : void
+   IDENTIFIER : std::string
+   Prefix : opcode
+   While : void
+   RPAR : void
+   Then : void
+   Else : void
+   LPAR : void
+   COMMA : void
+   BECOMES : void
+
+
+parsercodebuilder:
+
+namespace =      
+source =          from file , line 0 :
+   0 :   
+parameters:
+
+Start Symbols with their Lookahead Sets:
+   Stat : { EOF }
+
+
+Rules:
+
+(0)   Stat  =>  While Expr Do Stat
+(1)   Stat  =>  If Expr Then Stat
+(2)   Stat  =>  If Expr Then Stat Else Stat
+(3)   Stat  =>  Expr BECOMES Expr
+(4)   Expr  =>  E
+(5)   E  =>  Prefix E
+(6)   E  =>  E Infix E
+(7)   E  =>  E Postfix
+(8)   E  =>  NUMBER
+(9)   E  =>  IDENTIFIER
+(10)   E  =>  LPAR E RPAR
+(11)   E  =>  Function LPAR Arglist RPAR
+(12)   Arglist  =>  E
+(13)   Arglist  =>  Arglist COMMA E
+(14)   Prefix  =>  IDENTIFIER
+(15)   Infix  =>  IDENTIFIER
+(16)   Postfix  =>  IDENTIFIER
+(17)   Function  =>  IDENTIFIER
+(18)   While  =>  IDENTIFIER
+(19)   Do  =>  IDENTIFIER
+(20)   If  =>  IDENTIFIER
+(21)   Then  =>  IDENTIFIER
+(22)   Else  =>  IDENTIFIER
+
+
+
+Reduction Sequences:
+   Identifier : 3
+   Postfix : 2
+   Infix : 1
+   Prefix : 0
+
+   Identifier : 4
+   Else : 3
+   If : 2
+   Do : 1
+   While : 0
+
+
+input was read succesfully
+
+after closure
+Parsetable:
+====================================
+
+Initial States:
+   Stat : S0
+
+
+S0:
+   Stat =>  # While Expr Do Stat  /  { EOF }
+   Stat =>  # If Expr Then Stat  /  { EOF }
+   Stat =>  # If Expr Then Stat Else Stat  /  { EOF }
+   Stat =>  # Expr BECOMES Expr  /  { EOF }
+
+Shifts:
+   Prefix : S9
+   E : S8
+   Function : S7
+   Stat : S37
+   IDENTIFIER : S6
+   LPAR : S5
+   Expr : S4
+   If : S3
+   While : S2
+   NUMBER : S1
+
+
+S1:
+   E =>  NUMBER #  /  { Else, Then, Postfix, IDENTIFIER, EOF, RPAR, Do, Infix, COMMA, BECOMES }
+
+Reductions:
+   BECOMES : 8
+   COMMA : 8
+   Infix : 8
+   Do : 8
+   RPAR : 8
+   EOF : 8
+   IDENTIFIER : 8
+   Postfix : 8
+   Then : 8
+   Else : 8
+
+
+S2:
+   Stat =>  While # Expr Do Stat  /  { Else, IDENTIFIER, EOF }
+
+Shifts:
+   Expr : S11
+   E : S8
+   Function : S7
+   Prefix : S9
+   IDENTIFIER : S10
+   LPAR : S5
+   NUMBER : S1
+
+
+S3:
+   Stat =>  If # Expr Then Stat  /  { Else, IDENTIFIER, EOF }
+   Stat =>  If # Expr Then Stat Else Stat  /  { Else, IDENTIFIER, EOF }
+
+Shifts:
+   Expr : S12
+   IDENTIFIER : S10
+   LPAR : S5
+   E : S8
+   Function : S7
+   Prefix : S9
+   NUMBER : S1
+
+
+S4:
+   Stat =>  Expr # BECOMES Expr  /  { Else, IDENTIFIER, EOF }
+
+Shifts:
+   BECOMES : S13
+
+
+S5:
+   E =>  LPAR # E RPAR  /  { Else, Then, Postfix, IDENTIFIER, EOF, RPAR, Do, Infix, COMMA, BECOMES }
+
+Shifts:
+   E : S14
+   Function : S7
+   Prefix : S9
+   LPAR : S5
+   IDENTIFIER : S10
+   NUMBER : S1
+
+
+S6:
+   E =>  IDENTIFIER #  /  { Postfix, IDENTIFIER, Infix, BECOMES }
+   Prefix =>  IDENTIFIER #  /  { COMMA, Postfix, NUMBER, Infix, RPAR, Arglist, IDENTIFIER, LPAR, Prefix, Function, E }
+   Function =>  IDENTIFIER #  /  { LPAR }
+   If =>  IDENTIFIER #  /  { COMMA, NUMBER, Infix, RPAR, Arglist, IDENTIFIER, LPAR, Prefix, Function, E, Postfix, Expr }
+   While =>  IDENTIFIER #  /  { COMMA, NUMBER, Infix, RPAR, Arglist, IDENTIFIER, LPAR, Prefix, Function, E, Postfix, Expr }
+
+Reductions:
+   E : 18, 20, 14
+   Function : 18, 20, 14
+   Prefix : 18, 20, 14
+   Arglist : 18, 20, 14
+   NUMBER : 18, 20, 14
+   COMMA : 18, 20, 14
+   BECOMES : 9
+   RPAR : 18, 20, 14
+   Infix : 18, 20, 14, 9
+   LPAR : 18, 20, 17, 14
+   IDENTIFIER : 18, 20, 14, 9
+   Expr : 18, 20
+   Postfix : 18, 20, 14, 9
+
+
+S7:
+   E =>  Function # LPAR Arglist RPAR  /  { Else, Then, Postfix, IDENTIFIER, EOF, RPAR, Do, Infix, COMMA, BECOMES }
+
+Shifts:
+   LPAR : S15
+
+
+S8:
+   E =>  E # Infix E  /  { Else, Then, Postfix, IDENTIFIER, EOF, Do, Infix, BECOMES }
+   E =>  E # Postfix  /  { Else, Then, Postfix, IDENTIFIER, EOF, Do, Infix, BECOMES }
+   Expr =>  E #  /  { Else, Then, EOF, Do, IDENTIFIER, BECOMES }
+
+Shifts:
+   Postfix : S18
+   Infix : S17
+   IDENTIFIER : S16
+
+Reductions:
+   BECOMES : 4
+   IDENTIFIER : 4
+   Do : 4
+   EOF : 4
+   Then : 4
+   Else : 4
+
+
+S9:
+   E =>  Prefix # E  /  { Else, Then, Postfix, IDENTIFIER, EOF, RPAR, Do, Infix, COMMA, BECOMES }
+
+Shifts:
+   E : S19
+   Prefix : S9
+   Function : S7
+   LPAR : S5
+   IDENTIFIER : S10
+   NUMBER : S1
+
+
+S10:
+   Function =>  IDENTIFIER #  /  { LPAR }
+   E =>  IDENTIFIER #  /  { Else, COMMA, BECOMES, Then, Postfix, EOF, RPAR, Do, Infix, IDENTIFIER }
+   Prefix =>  IDENTIFIER #  /  { COMMA, Postfix, NUMBER, Infix, RPAR, Arglist, IDENTIFIER, LPAR, Prefix, Function, E }
+
+Reductions:
+   E : 14
+   Function : 14
+   LPAR : 14, 17
+   Prefix : 14
+   IDENTIFIER : 14, 9
+   Else : 9
+   Arglist : 14
+   COMMA : 14, 9
+   BECOMES : 9
+   Postfix : 14, 9
+   EOF : 9
+   Then : 9
+   RPAR : 14, 9
+   Do : 9
+   Infix : 14, 9
+   NUMBER : 14
+
+
+S11:
+   Stat =>  While Expr # Do Stat  /  { IDENTIFIER, Else, EOF }
+
+Shifts:
+   Do : S21
+   IDENTIFIER : S20
+
+
+S12:
+   Stat =>  If Expr # Then Stat Else Stat  /  { IDENTIFIER, Else, EOF }
+   Stat =>  If Expr # Then Stat  /  { IDENTIFIER, Else, EOF }
+
+Shifts:
+   Then : S23
+   IDENTIFIER : S22
+
+
+S13:
+   Stat =>  Expr BECOMES # Expr  /  { IDENTIFIER, Else, EOF }
+
+Shifts:
+   Expr : S24
+   E : S8
+   Function : S7
+   Prefix : S9
+   IDENTIFIER : S10
+   LPAR : S5
+   NUMBER : S1
+
+
+S14:
+   E =>  LPAR E # RPAR  /  { Else, Then, Postfix, IDENTIFIER, RPAR, EOF, Do, Infix, COMMA, BECOMES }
+   E =>  E # Postfix  /  { Postfix, IDENTIFIER, Infix, RPAR }
+   E =>  E # Infix E  /  { Postfix, IDENTIFIER, Infix, RPAR }
+
+Shifts:
+   Infix : S17
+   RPAR : S25
+   Postfix : S18
+   IDENTIFIER : S16
+
+
+S15:
+   E =>  Function LPAR # Arglist RPAR  /  { Else, Then, Postfix, IDENTIFIER, EOF, RPAR, Do, Infix, COMMA, BECOMES }
+
+Shifts:
+   Arglist : S27
+   Function : S7
+   E : S26
+   Prefix : S9
+   LPAR : S5
+   IDENTIFIER : S10
+   NUMBER : S1
+
+
+S16:
+   Postfix =>  IDENTIFIER #  /  { Else, Then, Postfix, IDENTIFIER, EOF, RPAR, Do, Infix, COMMA, BECOMES }
+   Infix =>  IDENTIFIER #  /  { COMMA, Postfix, NUMBER, Infix, RPAR, Arglist, IDENTIFIER, LPAR, Prefix, Function, E }
+
+Reductions:
+   E : 15
+   Function : 15
+   Else : 16
+   Arglist : 15
+   Postfix : 15, 16
+   Prefix : 15
+   IDENTIFIER : 15, 16
+   LPAR : 15
+   EOF : 16
+   Then : 16
+   RPAR : 15, 16
+   Do : 16
+   Infix : 15, 16
+   COMMA : 15, 16
+   BECOMES : 16
+   NUMBER : 15
+
+
+S17:
+   E =>  E Infix # E  /  { Else, Then, Postfix, IDENTIFIER, EOF, RPAR, Do, Infix, COMMA, BECOMES }
+
+Shifts:
+   E : S28
+   Function : S7
+   Prefix : S9
+   LPAR : S5
+   IDENTIFIER : S10
+   NUMBER : S1
+
+
+S18:
+   E =>  E Postfix #  /  { Else, Then, Postfix, IDENTIFIER, EOF, RPAR, Do, Infix, COMMA, BECOMES }
+
+Reductions:
+   BECOMES : 7
+   COMMA : 7
+   Infix : 7
+   Do : 7
+   RPAR : 7
+   EOF : 7
+   IDENTIFIER : 7
+   Postfix : 7
+   Then : 7
+   Else : 7
+
+
+S19:
+   E =>  Prefix E #  /  { Else, Then, Postfix, IDENTIFIER, EOF, RPAR, Do, Infix, COMMA, BECOMES }
+   E =>  E # Postfix  /  { Else, Then, Postfix, IDENTIFIER, EOF, RPAR, Do, Infix, COMMA, BECOMES }
+   E =>  E # Infix E  /  { Else, Then, Postfix, IDENTIFIER, EOF, RPAR, Do, Infix, COMMA, BECOMES }
+
+Shifts:
+   Infix : S17
+   Postfix : S18
+   IDENTIFIER : S16
+
+Reductions:
+   BECOMES : 5
+   COMMA : 5
+   Infix : 5
+   Do : 5
+   RPAR : 5
+   EOF : 5
+   IDENTIFIER : 5
+   Postfix : 5
+   Then : 5
+   Else : 5
+
+
+S20:
+   Do =>  IDENTIFIER #  /  { Arglist, Else, Then, RPAR, LPAR, Stat, Function, E, Do, Infix, Prefix, While, IDENTIFIER, COMMA, BECOMES, Postfix, Expr, If, NUMBER }
+
+Reductions:
+   NUMBER : 19
+   If : 19
+   Expr : 19
+   Postfix : 19
+   BECOMES : 19
+   COMMA : 19
+   Arglist : 19
+   Else : 19
+   Then : 19
+   RPAR : 19
+   Do : 19
+   Infix : 19
+   LPAR : 19
+   Stat : 19
+   Function : 19
+   E : 19
+   IDENTIFIER : 19
+   Prefix : 19
+   While : 19
+
+
+S21:
+   Stat =>  While Expr Do # Stat  /  { Else, IDENTIFIER, EOF }
+
+Shifts:
+   NUMBER : S1
+   IDENTIFIER : S6
+   LPAR : S5
+   Stat : S29
+   Function : S7
+   E : S8
+   Prefix : S9
+   If : S3
+   Expr : S4
+   While : S2
+
+
+S22:
+   Then =>  IDENTIFIER #  /  { Arglist, Else, Then, RPAR, LPAR, Stat, Function, E, Do, Infix, Prefix, While, IDENTIFIER, COMMA, BECOMES, Postfix, Expr, If, NUMBER }
+
+Reductions:
+   NUMBER : 21
+   If : 21
+   Expr : 21
+   Postfix : 21
+   BECOMES : 21
+   COMMA : 21
+   Arglist : 21
+   Else : 21
+   Then : 21
+   RPAR : 21
+   Do : 21
+   Infix : 21
+   LPAR : 21
+   Stat : 21
+   Function : 21
+   E : 21
+   IDENTIFIER : 21
+   Prefix : 21
+   While : 21
+
+
+S23:
+   Stat =>  If Expr Then # Stat  /  { Else, IDENTIFIER, EOF }
+   Stat =>  If Expr Then # Stat Else Stat  /  { Else, IDENTIFIER, EOF }
+
+Shifts:
+   NUMBER : S1
+   IDENTIFIER : S6
+   LPAR : S5
+   Stat : S30
+   Function : S7
+   E : S8
+   Prefix : S9
+   If : S3
+   Expr : S4
+   While : S2
+
+
+S24:
+   Stat =>  Expr BECOMES Expr #  /  { Else, IDENTIFIER, EOF }
+
+Reductions:
+   EOF : 3
+   IDENTIFIER : 3
+   Else : 3
+
+
+S25:
+   E =>  LPAR E RPAR #  /  { Else, Then, Postfix, IDENTIFIER, EOF, RPAR, Do, Infix, COMMA, BECOMES }
+
+Reductions:
+   BECOMES : 10
+   COMMA : 10
+   Infix : 10
+   Do : 10
+   RPAR : 10
+   EOF : 10
+   IDENTIFIER : 10
+   Postfix : 10
+   Then : 10
+   Else : 10
+
+
+S26:
+   Arglist =>  E #  /  { COMMA, RPAR }
+   E =>  E # Postfix  /  { COMMA, Postfix, IDENTIFIER, Infix, RPAR }
+   E =>  E # Infix E  /  { COMMA, Postfix, IDENTIFIER, Infix, RPAR }
+
+Shifts:
+   Infix : S17
+   Postfix : S18
+   IDENTIFIER : S16
+
+Reductions:
+   RPAR : 12
+   COMMA : 12
+
+
+S27:
+   E =>  Function LPAR Arglist # RPAR  /  { Else, Then, Postfix, IDENTIFIER, EOF, RPAR, Do, Infix, COMMA, BECOMES }
+   Arglist =>  Arglist # COMMA E  /  { COMMA, RPAR }
+
+Shifts:
+   COMMA : S32
+   RPAR : S31
+
+
+S28:
+   E =>  E Infix E #  /  { Else, Then, Postfix, IDENTIFIER, EOF, RPAR, Do, Infix, COMMA, BECOMES }
+   E =>  E # Infix E  /  { Else, Then, Postfix, IDENTIFIER, EOF, RPAR, Do, Infix, COMMA, BECOMES }
+   E =>  E # Postfix  /  { Else, Then, Postfix, IDENTIFIER, EOF, RPAR, Do, Infix, COMMA, BECOMES }
+
+Shifts:
+   Postfix : S18
+   Infix : S17
+   IDENTIFIER : S16
+
+Reductions:
+   BECOMES : 6
+   COMMA : 6
+   Infix : 6
+   Do : 6
+   RPAR : 6
+   EOF : 6
+   IDENTIFIER : 6
+   Postfix : 6
+   Then : 6
+   Else : 6
+
+
+S29:
+   Stat =>  While Expr Do Stat #  /  { IDENTIFIER, Else, EOF }
+
+Reductions:
+   EOF : 0
+   Else : 0
+   IDENTIFIER : 0
+
+
+S30:
+   Stat =>  If Expr Then Stat #  /  { IDENTIFIER, Else, EOF }
+   Stat =>  If Expr Then Stat # Else Stat  /  { IDENTIFIER, Else, EOF }
+
+Shifts:
+   Else : S34
+   IDENTIFIER : S33
+
+Reductions:
+   EOF : 1
+   Else : 1
+   IDENTIFIER : 1
+
+
+S31:
+   E =>  Function LPAR Arglist RPAR #  /  { Else, Then, Postfix, IDENTIFIER, EOF, RPAR, Do, Infix, COMMA, BECOMES }
+
+Reductions:
+   BECOMES : 11
+   COMMA : 11
+   Infix : 11
+   Do : 11
+   RPAR : 11
+   EOF : 11
+   IDENTIFIER : 11
+   Postfix : 11
+   Then : 11
+   Else : 11
+
+
+S32:
+   Arglist =>  Arglist COMMA # E  /  { COMMA, RPAR }
+
+Shifts:
+   E : S35
+   Function : S7
+   Prefix : S9
+   LPAR : S5
+   IDENTIFIER : S10
+   NUMBER : S1
+
+
+S33:
+   Else =>  IDENTIFIER #  /  { Arglist, Else, Then, RPAR, LPAR, Stat, Function, E, Do, Infix, Prefix, While, IDENTIFIER, COMMA, BECOMES, Postfix, Expr, If, NUMBER }
+
+Reductions:
+   NUMBER : 22
+   If : 22
+   Expr : 22
+   Postfix : 22
+   BECOMES : 22
+   COMMA : 22
+   Arglist : 22
+   Else : 22
+   Then : 22
+   RPAR : 22
+   Do : 22
+   Infix : 22
+   LPAR : 22
+   Stat : 22
+   Function : 22
+   E : 22
+   IDENTIFIER : 22
+   Prefix : 22
+   While : 22
+
+
+S34:
+   Stat =>  If Expr Then Stat Else # Stat  /  { Else, IDENTIFIER, EOF }
+
+Shifts:
+   NUMBER : S1
+   IDENTIFIER : S6
+   LPAR : S5
+   Stat : S36
+   Function : S7
+   E : S8
+   Prefix : S9
+   If : S3
+   Expr : S4
+   While : S2
+
+
+S35:
+   Arglist =>  Arglist COMMA E #  /  { COMMA, RPAR }
+   E =>  E # Postfix  /  { COMMA, Postfix, IDENTIFIER, Infix, RPAR }
+   E =>  E # Infix E  /  { COMMA, Postfix, IDENTIFIER, Infix, RPAR }
+
+Shifts:
+   Infix : S17
+   Postfix : S18
+   IDENTIFIER : S16
+
+Reductions:
+   RPAR : 13
+   COMMA : 13
+
+
+S36:
+   Stat =>  If Expr Then Stat Else Stat #  /  { IDENTIFIER, Else, EOF }
+
+Reductions:
+   EOF : 2
+   Else : 2
+   IDENTIFIER : 2
+
+
+S37:
+
+
+
+
+symbol definition will be put in ./symbol.h and ./symbol.cpp
+
+opening file ../idee.x
+parser definition will be put in ./parser.h and ./parser.cpp
+
+state 0
+shift/red conflicts: { }
+   Stat =>  # While Expr Do Stat  /  { EOF }
+   Stat =>  # If Expr Then Stat  /  { EOF }
+   Stat =>  # If Expr Then Stat Else Stat  /  { EOF }
+   Stat =>  # Expr BECOMES Expr  /  { EOF }
+
+Shifts:
+   Prefix : S9
+   E : S8
+   Function : S7
+   Stat : S37
+   IDENTIFIER : S6
+   LPAR : S5
+   Expr : S4
+   If : S3
+   While : S2
+   NUMBER : S1
+
+
+state 1
+shift/red conflicts: { }
+   E =>  NUMBER #  /  { Else, Then, Postfix, IDENTIFIER, EOF, RPAR, Do, Infix, COMMA, BECOMES }
+
+Reductions:
+   BECOMES : 8
+   COMMA : 8
+   Infix : 8
+   Do : 8
+   RPAR : 8
+   EOF : 8
+   IDENTIFIER : 8
+   Postfix : 8
+   Then : 8
+   Else : 8
+
+state has reductions
+default rule = 8
+
+state 2
+shift/red conflicts: { }
+   Stat =>  While # Expr Do Stat  /  { Else, IDENTIFIER, EOF }
+
+Shifts:
+   Expr : S11
+   E : S8
+   Function : S7
+   Prefix : S9
+   IDENTIFIER : S10
+   LPAR : S5
+   NUMBER : S1
+
+
+state 3
+shift/red conflicts: { }
+   Stat =>  If # Expr Then Stat  /  { Else, IDENTIFIER, EOF }
+   Stat =>  If # Expr Then Stat Else Stat  /  { Else, IDENTIFIER, EOF }
+
+Shifts:
+   Expr : S12
+   IDENTIFIER : S10
+   LPAR : S5
+   E : S8
+   Function : S7
+   Prefix : S9
+   NUMBER : S1
+
+
+state 4
+shift/red conflicts: { }
+   Stat =>  Expr # BECOMES Expr  /  { Else, IDENTIFIER, EOF }
+
+Shifts:
+   BECOMES : S13
+
+
+state 5
+shift/red conflicts: { }
+   E =>  LPAR # E RPAR  /  { Else, Then, Postfix, IDENTIFIER, EOF, RPAR, Do, Infix, COMMA, BECOMES }
+
+Shifts:
+   E : S14
+   Function : S7
+   Prefix : S9
+   LPAR : S5
+   IDENTIFIER : S10
+   NUMBER : S1
+
+
+state 6
+shift/red conflicts: { }
+   E =>  IDENTIFIER #  /  { Postfix, IDENTIFIER, Infix, BECOMES }
+   Prefix =>  IDENTIFIER #  /  { COMMA, Postfix, NUMBER, Infix, RPAR, Arglist, IDENTIFIER, LPAR, Prefix, Function, E }
+   Function =>  IDENTIFIER #  /  { LPAR }
+   If =>  IDENTIFIER #  /  { COMMA, NUMBER, Infix, RPAR, Arglist, IDENTIFIER, LPAR, Prefix, Function, E, Postfix, Expr }
+   While =>  IDENTIFIER #  /  { COMMA, NUMBER, Infix, RPAR, Arglist, IDENTIFIER, LPAR, Prefix, Function, E, Postfix, Expr }
+
+Reductions:
+   E : 18, 20, 14
+   Function : 18, 20, 14
+   Prefix : 18, 20, 14
+   Arglist : 18, 20, 14
+   NUMBER : 18, 20, 14
+   COMMA : 18, 20, 14
+   BECOMES : 9
+   RPAR : 18, 20, 14
+   Infix : 18, 20, 14, 9
+   LPAR : 18, 20, 17, 14
+   IDENTIFIER : 18, 20, 14, 9
+   Expr : 18, 20
+   Postfix : 18, 20, 14, 9
+
+state has reductions
+sadly this is a hard state
+
+state 7
+shift/red conflicts: { }
+   E =>  Function # LPAR Arglist RPAR  /  { Else, Then, Postfix, IDENTIFIER, EOF, RPAR, Do, Infix, COMMA, BECOMES }
+
+Shifts:
+   LPAR : S15
+
+
+state 8
+shift/red conflicts: { IDENTIFIER }
+   E =>  E # Infix E  /  { Else, Then, Postfix, IDENTIFIER, EOF, Do, Infix, BECOMES }
+   E =>  E # Postfix  /  { Else, Then, Postfix, IDENTIFIER, EOF, Do, Infix, BECOMES }
+   Expr =>  E #  /  { Else, Then, EOF, Do, IDENTIFIER, BECOMES }
+
+Shifts:
+   Postfix : S18
+   Infix : S17
+   IDENTIFIER : S16
+
+Reductions:
+   BECOMES : 4
+   IDENTIFIER : 4
+   Do : 4
+   EOF : 4
+   Then : 4
+   Else : 4
+
+state has reductions
+sadly this is a hard state
+
+state 9
+shift/red conflicts: { }
+   E =>  Prefix # E  /  { Else, Then, Postfix, IDENTIFIER, EOF, RPAR, Do, Infix, COMMA, BECOMES }
+
+Shifts:
+   E : S19
+   Prefix : S9
+   Function : S7
+   LPAR : S5
+   IDENTIFIER : S10
+   NUMBER : S1
+
+
+state 10
+shift/red conflicts: { }
+   Function =>  IDENTIFIER #  /  { LPAR }
+   E =>  IDENTIFIER #  /  { Else, COMMA, BECOMES, Then, Postfix, EOF, RPAR, Do, Infix, IDENTIFIER }
+   Prefix =>  IDENTIFIER #  /  { COMMA, Postfix, NUMBER, Infix, RPAR, Arglist, IDENTIFIER, LPAR, Prefix, Function, E }
+
+Reductions:
+   E : 14
+   Function : 14
+   LPAR : 14, 17
+   Prefix : 14
+   IDENTIFIER : 14, 9
+   Else : 9
+   Arglist : 14
+   COMMA : 14, 9
+   BECOMES : 9
+   Postfix : 14, 9
+   EOF : 9
+   Then : 9
+   RPAR : 14, 9
+   Do : 9
+   Infix : 14, 9
+   NUMBER : 14
+
+state has reductions
+sadly this is a hard state
+
+state 11
+shift/red conflicts: { }
+   Stat =>  While Expr # Do Stat  /  { IDENTIFIER, Else, EOF }
+
+Shifts:
+   Do : S21
+   IDENTIFIER : S20
+
+
+state 12
+shift/red conflicts: { }
+   Stat =>  If Expr # Then Stat Else Stat  /  { IDENTIFIER, Else, EOF }
+   Stat =>  If Expr # Then Stat  /  { IDENTIFIER, Else, EOF }
+
+Shifts:
+   Then : S23
+   IDENTIFIER : S22
+
+
+state 13
+shift/red conflicts: { }
+   Stat =>  Expr BECOMES # Expr  /  { IDENTIFIER, Else, EOF }
+
+Shifts:
+   Expr : S24
+   E : S8
+   Function : S7
+   Prefix : S9
+   IDENTIFIER : S10
+   LPAR : S5
+   NUMBER : S1
+
+
+state 14
+shift/red conflicts: { }
+   E =>  LPAR E # RPAR  /  { Else, Then, Postfix, IDENTIFIER, RPAR, EOF, Do, Infix, COMMA, BECOMES }
+   E =>  E # Postfix  /  { Postfix, IDENTIFIER, Infix, RPAR }
+   E =>  E # Infix E  /  { Postfix, IDENTIFIER, Infix, RPAR }
+
+Shifts:
+   Infix : S17
+   RPAR : S25
+   Postfix : S18
+   IDENTIFIER : S16
+
+
+state 15
+shift/red conflicts: { }
+   E =>  Function LPAR # Arglist RPAR  /  { Else, Then, Postfix, IDENTIFIER, EOF, RPAR, Do, Infix, COMMA, BECOMES }
+
+Shifts:
+   Arglist : S27
+   Function : S7
+   E : S26
+   Prefix : S9
+   LPAR : S5
+   IDENTIFIER : S10
+   NUMBER : S1
+
+
+state 16
+shift/red conflicts: { }
+   Postfix =>  IDENTIFIER #  /  { Else, Then, Postfix, IDENTIFIER, EOF, RPAR, Do, Infix, COMMA, BECOMES }
+   Infix =>  IDENTIFIER #  /  { COMMA, Postfix, NUMBER, Infix, RPAR, Arglist, IDENTIFIER, LPAR, Prefix, Function, E }
+
+Reductions:
+   E : 15
+   Function : 15
+   Else : 16
+   Arglist : 15
+   Postfix : 15, 16
+   Prefix : 15
+   IDENTIFIER : 15, 16
+   LPAR : 15
+   EOF : 16
+   Then : 16
+   RPAR : 15, 16
+   Do : 16
+   Infix : 15, 16
+   COMMA : 15, 16
+   BECOMES : 16
+   NUMBER : 15
+
+state has reductions
+sadly this is a hard state
+
+state 17
+shift/red conflicts: { }
+   E =>  E Infix # E  /  { Else, Then, Postfix, IDENTIFIER, EOF, RPAR, Do, Infix, COMMA, BECOMES }
+
+Shifts:
+   E : S28
+   Function : S7
+   Prefix : S9
+   LPAR : S5
+   IDENTIFIER : S10
+   NUMBER : S1
+
+
+state 18
+shift/red conflicts: { }
+   E =>  E Postfix #  /  { Else, Then, Postfix, IDENTIFIER, EOF, RPAR, Do, Infix, COMMA, BECOMES }
+
+Reductions:
+   BECOMES : 7
+   COMMA : 7
+   Infix : 7
+   Do : 7
+   RPAR : 7
+   EOF : 7
+   IDENTIFIER : 7
+   Postfix : 7
+   Then : 7
+   Else : 7
+
+state has reductions
+default rule = 7
+
+state 19
+shift/red conflicts: { Postfix, IDENTIFIER, Infix }
+   E =>  Prefix E #  /  { Else, Then, Postfix, IDENTIFIER, EOF, RPAR, Do, Infix, COMMA, BECOMES }
+   E =>  E # Postfix  /  { Else, Then, Postfix, IDENTIFIER, EOF, RPAR, Do, Infix, COMMA, BECOMES }
+   E =>  E # Infix E  /  { Else, Then, Postfix, IDENTIFIER, EOF, RPAR, Do, Infix, COMMA, BECOMES }
+
+Shifts:
+   Infix : S17
+   Postfix : S18
+   IDENTIFIER : S16
+
+Reductions:
+   BECOMES : 5
+   COMMA : 5
+   Infix : 5
+   Do : 5
+   RPAR : 5
+   EOF : 5
+   IDENTIFIER : 5
+   Postfix : 5
+   Then : 5
+   Else : 5
+
+state has reductions
+sadly this is a hard state
+
+state 20
+shift/red conflicts: { }
+   Do =>  IDENTIFIER #  /  { Arglist, Else, Then, RPAR, LPAR, Stat, Function, E, Do, Infix, Prefix, While, IDENTIFIER, COMMA, BECOMES, Postfix, Expr, If, NUMBER }
+
+Reductions:
+   NUMBER : 19
+   If : 19
+   Expr : 19
+   Postfix : 19
+   BECOMES : 19
+   COMMA : 19
+   Arglist : 19
+   Else : 19
+   Then : 19
+   RPAR : 19
+   Do : 19
+   Infix : 19
+   LPAR : 19
+   Stat : 19
+   Function : 19
+   E : 19
+   IDENTIFIER : 19
+   Prefix : 19
+   While : 19
+
+state has reductions
+default rule = 19
+
+state 21
+shift/red conflicts: { }
+   Stat =>  While Expr Do # Stat  /  { Else, IDENTIFIER, EOF }
+
+Shifts:
+   NUMBER : S1
+   IDENTIFIER : S6
+   LPAR : S5
+   Stat : S29
+   Function : S7
+   E : S8
+   Prefix : S9
+   If : S3
+   Expr : S4
+   While : S2
+
+
+state 22
+shift/red conflicts: { }
+   Then =>  IDENTIFIER #  /  { Arglist, Else, Then, RPAR, LPAR, Stat, Function, E, Do, Infix, Prefix, While, IDENTIFIER, COMMA, BECOMES, Postfix, Expr, If, NUMBER }
+
+Reductions:
+   NUMBER : 21
+   If : 21
+   Expr : 21
+   Postfix : 21
+   BECOMES : 21
+   COMMA : 21
+   Arglist : 21
+   Else : 21
+   Then : 21
+   RPAR : 21
+   Do : 21
+   Infix : 21
+   LPAR : 21
+   Stat : 21
+   Function : 21
+   E : 21
+   IDENTIFIER : 21
+   Prefix : 21
+   While : 21
+
+state has reductions
+default rule = 21
+
+state 23
+shift/red conflicts: { }
+   Stat =>  If Expr Then # Stat  /  { Else, IDENTIFIER, EOF }
+   Stat =>  If Expr Then # Stat Else Stat  /  { Else, IDENTIFIER, EOF }
+
+Shifts:
+   NUMBER : S1
+   IDENTIFIER : S6
+   LPAR : S5
+   Stat : S30
+   Function : S7
+   E : S8
+   Prefix : S9
+   If : S3
+   Expr : S4
+   While : S2
+
+
+state 24
+shift/red conflicts: { }
+   Stat =>  Expr BECOMES Expr #  /  { Else, IDENTIFIER, EOF }
+
+Reductions:
+   EOF : 3
+   IDENTIFIER : 3
+   Else : 3
+
+state has reductions
+default rule = 3
+
+state 25
+shift/red conflicts: { }
+   E =>  LPAR E RPAR #  /  { Else, Then, Postfix, IDENTIFIER, EOF, RPAR, Do, Infix, COMMA, BECOMES }
+
+Reductions:
+   BECOMES : 10
+   COMMA : 10
+   Infix : 10
+   Do : 10
+   RPAR : 10
+   EOF : 10
+   IDENTIFIER : 10
+   Postfix : 10
+   Then : 10
+   Else : 10
+
+state has reductions
+default rule = 10
+
+state 26
+shift/red conflicts: { }
+   Arglist =>  E #  /  { COMMA, RPAR }
+   E =>  E # Postfix  /  { COMMA, Postfix, IDENTIFIER, Infix, RPAR }
+   E =>  E # Infix E  /  { COMMA, Postfix, IDENTIFIER, Infix, RPAR }
+
+Shifts:
+   Infix : S17
+   Postfix : S18
+   IDENTIFIER : S16
+
+Reductions:
+   RPAR : 12
+   COMMA : 12
+
+state has reductions
+default rule = 12
+
+state 27
+shift/red conflicts: { }
+   E =>  Function LPAR Arglist # RPAR  /  { Else, Then, Postfix, IDENTIFIER, EOF, RPAR, Do, Infix, COMMA, BECOMES }
+   Arglist =>  Arglist # COMMA E  /  { COMMA, RPAR }
+
+Shifts:
+   COMMA : S32
+   RPAR : S31
+
+
+state 28
+shift/red conflicts: { Postfix, IDENTIFIER, Infix }
+   E =>  E Infix E #  /  { Else, Then, Postfix, IDENTIFIER, EOF, RPAR, Do, Infix, COMMA, BECOMES }
+   E =>  E # Infix E  /  { Else, Then, Postfix, IDENTIFIER, EOF, RPAR, Do, Infix, COMMA, BECOMES }
+   E =>  E # Postfix  /  { Else, Then, Postfix, IDENTIFIER, EOF, RPAR, Do, Infix, COMMA, BECOMES }
+
+Shifts:
+   Postfix : S18
+   Infix : S17
+   IDENTIFIER : S16
+
+Reductions:
+   BECOMES : 6
+   COMMA : 6
+   Infix : 6
+   Do : 6
+   RPAR : 6
+   EOF : 6
+   IDENTIFIER : 6
+   Postfix : 6
+   Then : 6
+   Else : 6
+
+state has reductions
+sadly this is a hard state
+
+state 29
+shift/red conflicts: { }
+   Stat =>  While Expr Do Stat #  /  { IDENTIFIER, Else, EOF }
+
+Reductions:
+   EOF : 0
+   Else : 0
+   IDENTIFIER : 0
+
+state has reductions
+default rule = 0
+
+state 30
+shift/red conflicts: { IDENTIFIER, Else }
+   Stat =>  If Expr Then Stat #  /  { IDENTIFIER, Else, EOF }
+   Stat =>  If Expr Then Stat # Else Stat  /  { IDENTIFIER, Else, EOF }
+
+Shifts:
+   Else : S34
+   IDENTIFIER : S33
+
+Reductions:
+   EOF : 1
+   Else : 1
+   IDENTIFIER : 1
+
+state has reductions
+sadly this is a hard state
+
+state 31
+shift/red conflicts: { }
+   E =>  Function LPAR Arglist RPAR #  /  { Else, Then, Postfix, IDENTIFIER, EOF, RPAR, Do, Infix, COMMA, BECOMES }
+
+Reductions:
+   BECOMES : 11
+   COMMA : 11
+   Infix : 11
+   Do : 11
+   RPAR : 11
+   EOF : 11
+   IDENTIFIER : 11
+   Postfix : 11
+   Then : 11
+   Else : 11
+
+state has reductions
+default rule = 11
+
+state 32
+shift/red conflicts: { }
+   Arglist =>  Arglist COMMA # E  /  { COMMA, RPAR }
+
+Shifts:
+   E : S35
+   Function : S7
+   Prefix : S9
+   LPAR : S5
+   IDENTIFIER : S10
+   NUMBER : S1
+
+
+state 33
+shift/red conflicts: { }
+   Else =>  IDENTIFIER #  /  { Arglist, Else, Then, RPAR, LPAR, Stat, Function, E, Do, Infix, Prefix, While, IDENTIFIER, COMMA, BECOMES, Postfix, Expr, If, NUMBER }
+
+Reductions:
+   NUMBER : 22
+   If : 22
+   Expr : 22
+   Postfix : 22
+   BECOMES : 22
+   COMMA : 22
+   Arglist : 22
+   Else : 22
+   Then : 22
+   RPAR : 22
+   Do : 22
+   Infix : 22
+   LPAR : 22
+   Stat : 22
+   Function : 22
+   E : 22
+   IDENTIFIER : 22
+   Prefix : 22
+   While : 22
+
+state has reductions
+default rule = 22
+
+state 34
+shift/red conflicts: { }
+   Stat =>  If Expr Then Stat Else # Stat  /  { Else, IDENTIFIER, EOF }
+
+Shifts:
+   NUMBER : S1
+   IDENTIFIER : S6
+   LPAR : S5
+   Stat : S36
+   Function : S7
+   E : S8
+   Prefix : S9
+   If : S3
+   Expr : S4
+   While : S2
+
+
+state 35
+shift/red conflicts: { }
+   Arglist =>  Arglist COMMA E #  /  { COMMA, RPAR }
+   E =>  E # Postfix  /  { COMMA, Postfix, IDENTIFIER, Infix, RPAR }
+   E =>  E # Infix E  /  { COMMA, Postfix, IDENTIFIER, Infix, RPAR }
+
+Shifts:
+   Infix : S17
+   Postfix : S18
+   IDENTIFIER : S16
+
+Reductions:
+   RPAR : 13
+   COMMA : 13
+
+state has reductions
+default rule = 13
+
+state 36
+shift/red conflicts: { }
+   Stat =>  If Expr Then Stat Else Stat #  /  { IDENTIFIER, Else, EOF }
+
+Reductions:
+   EOF : 2
+   Else : 2
+   IDENTIFIER : 2
+
+state has reductions
+default rule = 2
+
+state 37
+shift/red conflicts: { }
+
+
+problem with idee.x in line 726: could not read
+

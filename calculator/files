@@ -1,0 +1,11 @@
+
+calculator
+
+calculator.cpp
+symbol.cpp
+tokenizer.cpp
+parser.cpp
+../../lexing2023/filereader.cpp
+../../lexing2023/stateset.cpp
+../../lexing2023/partition.cpp
+

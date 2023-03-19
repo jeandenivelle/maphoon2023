@@ -3,7 +3,6 @@
 // Rewritten, using automata, in May 2022.
 
 #include "tokenizing.h"
-#include "../lexing2023/includes.h"
 
 const char* getcstring( token tok )
 {
@@ -300,7 +299,7 @@ namespace
 }
 
 
-std::pair< token, size_t > tokenize::maph( filereader& read )
+std::pair< token, size_t > tokenize::maph( lexing::filereader& read )
 {
    static auto cls = maph_classifier( );
 
@@ -324,7 +323,7 @@ restart:
 }
 
 
-std::pair< token, size_t > tokenize::cpp( filereader& read )
+std::pair< token, size_t > tokenize::cpp( lexing::filereader& read )
 {
    static auto cls = cpp_classifier( );
 

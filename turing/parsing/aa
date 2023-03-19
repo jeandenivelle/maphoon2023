@@ -1,0 +1,761 @@
+filereader( grammar.m, 157, 0 ) : %end{0A}
+lookahead: eof/4
+
+symbolcodebuilder:
+
+code for .h:
+from file grammar.m, line 33 :
+   33 :    #include "../turingmachine.h" 
+   34 :    #include "location.h" 
+   35 :    #include <vector> 
+
+
+namespace:
+   parsing
+
+infotype: location
+
+code for .cpp:
+from file grammar.m, line 37 :
+   37 :   
+   38 :   
+   39 :      {void} {print_attr}( {const} {state}& {st}, {std}::{ostream}& {out} )
+   40 :      {
+   41 :         {out} << {st};
+   42 :      }
+   43 :   
+   44 :      {void} {print_attr}( {const} {turingmachine}::{deltatype}& {delta}, {std}::{ostream}& {out} )
+   45 :      {
+   46 :         {print_range}( {delta}. {begin}( ), {delta}. {end}( ), '{', '}', {out} );
+   47 :      }
+   48 :   
+   49 :      {void} {print_attr}( {const} {std}::{set}<{char}> & {set}, {std}::{ostream}& {out} )
+   50 :      {
+   51 :         {print_range}( {set}. {begin}( ), {set}. {end}( ), '{', '}', {out} );
+   52 :      }
+   53 :   
+   54 :   
+
+
+declared attributes:
+   NewLines : void
+   STRING : std::string
+   GARBAGE : std::string
+   NL : void
+   StateSet : std::set<state>
+   ARROW : void
+   COMMA : void
+   EOF : void
+   WHITESPACE : void
+   COMMENT : void
+   BADFILE : void
+   Word : std::string
+   TransitionMap : turingmachine::deltatype
+   Rhs : rhs
+   CHAR : char
+   STARTING : void
+   INTEGER : int
+   ACCEPTING : void
+   OptInputs : std::vector<std::string>
+   LeftRightStat : int
+   BLANK : void
+   ALPHABET : void
+   TRANSITIONS : void
+   INPUTS : void
+   EMPTY : void
+   Words : std::vector<std::string>
+   Transition : std::pair<lhs, rhs>
+   MachineWithInputs : std::pair<turingmachine, std::vector<std::string> >
+   Lhs : lhs
+   OptNewLines : void
+   State : state
+   CharacterSet : std::set<char>
+
+
+parsercodebuilder:
+
+namespace =      parsing
+source =          from file , line 63 :
+   63 :    {tok}. {read}( ); 
+
+parameters:
+   tok :       tokenizer
+
+code for .h:
+from file grammar.m, line 61 :
+   61 :    #include "tokenizer.h" 
+
+
+Start Symbols with their Lookahead Sets:
+   MachineWithInputs : { EOF }
+
+
+Rules:
+
+(0)   MachineWithInputs  =>  OptNewLines ALPHABET CharacterSet NewLines STARTING State NewLines ACCEPTING StateSet NewLines BLANK CHAR NewLines TRANSITIONS NewLines TransitionMap OptInputs
+(1)   CharacterSet  =>  
+(2)   CharacterSet  =>  CharacterSet CHAR
+(3)   StateSet  =>  
+(4)   StateSet  =>  StateSet State
+(5)   TransitionMap  =>  
+(6)   TransitionMap  =>  TransitionMap Transition
+(7)   Transition  =>  Lhs ARROW Rhs NewLines
+(8)   Lhs  =>  State COMMA CHAR
+(9)   Rhs  =>  State COMMA Word COMMA INTEGER
+(10)   Rhs  =>  State COMMA Word COMMA LeftRightStat
+(11)   Word  =>  CHAR
+(12)   Word  =>  STRING
+(13)   State  =>  Word
+(14)   LeftRightStat  =>  CHAR
+(15)   NewLines  =>  NL
+(16)   NewLines  =>  NewLines NL
+(17)   OptNewLines  =>  
+(18)   OptNewLines  =>  NewLines
+(19)   OptInputs  =>  
+(20)   OptInputs  =>  INPUTS NewLines Words
+(21)   Words  =>  
+(22)   Words  =>  Words Word NewLines
+
+
+
+#0: reduction( inputs : 16, delta : 15, accepting : 8, blank : 11, starting : 5, sigma : 2 )
+from file grammar.m, line 76 :
+   76 :    {return} { {turingmachine}( {std}::{move}( {starting} ), {std}::{move}( {accepting} ),
+   77 :                             {std}::{move}( {sigma} ), {blank}, {std}::{move}( {delta} )), {inputs} }; 
+
+#1: reduction
+from file grammar.m, line 81 :
+   81 :    {return} {std}::{set}<{char}> ( ); 
+
+#2: reduction( c : 1, set : 0 )
+from file grammar.m, line 82 :
+   82 :    {set}. {insert}({c}); {return} {set}; 
+
+#3: reduction
+from file grammar.m, line 86 :
+   86 :    {return} {std}::{set}<{state}> ( ); 
+
+#4: reduction( s : 1, set : 0 )
+from file grammar.m, line 87 :
+   87 :    {set}. {insert}({s}); {return} {set}; 
+
+#5: reduction
+from file grammar.m, line 91 :
+   91 :    {return} {turingmachine}::{deltatype}( ); 
+
+#6: reduction( t : 1, d : 0 )
+from file grammar.m, line 93 :
+   93 :    {d}. {insert}( {std}::{move}({t})); {return} {d}; 
+
+#7: reduction( right : 2, left : 0 )
+from file grammar.m, line 96 :
+   96 :    {return} {std}::{pair}( {left}, {right} ); 
+
+#8: reduction( c : 2, q : 0 )
+from file grammar.m, line 99 :
+   99 :    {return} {lhs}({q},{c}); 
+
+#9: reduction( i : 4, w : 2, q : 0 )
+from file grammar.m, line 102 :
+   102 :    {return} {rhs}({q},{w},{i}); 
+
+#10: reduction( i : 4, w : 2, q : 0 )
+from file grammar.m, line 103 :
+   103 :    {return} {rhs}( {q},{w},{i} ); 
+
+#11: reduction( c : 0 )
+from file grammar.m, line 106 :
+   106 :    {std}::{string} {s} = {{c}}; {return} {s}; 
+
+#12: reduction( s : 0 )
+from file grammar.m, line 107 :
+   107 :    {return} {s}; 
+
+#13: reduction( w : 0 )
+from file grammar.m, line 110 :
+   110 :    {return} {state}({w}); 
+
+#14: reduction( c : 0 )
+? from file grammar.m, line 114 :
+   114 :    {char} {c1} = {toupper}({c}); {return} {c1} == 'L' || {c1} == 'S' || {c1} == 'R'; 
+
+from file grammar.m, line 116 :
+   116 :   
+   117 :      {char} {c1} = {toupper}({c});
+   118 :      {if}( {c1} == 'L' ) {return} -1;  // left 
+   119 :      {if}( {c1} == 'R' ) {return} 1;   // right
+   120 :      {return} 0;   // stationary. 
+
+
+#19: reduction
+from file grammar.m, line 137 :
+   137 :    {return} {std}::{vector}< {std}::{string} > ( ); 
+
+#20: reduction( inp : 2 )
+from file grammar.m, line 138 :
+   138 :    {return} {inp}; 
+
+#21: reduction
+from file grammar.m, line 142 :
+   142 :    {return} {std}::{vector}< {std}::{string} > ( ); 
+
+#22: reduction( w : 1, inp : 0 )
+from file grammar.m, line 143 :
+   143 :    {inp}. {push_back}({w}); {return} {inp}; 
+
+
+Possible error messages ( trigger => expectation ):
+   TRANSITIONS * * TransitionMap State * => "lhs character"
+   MachineWithInputs => "a state, %inputs, %end, or a test word"
+   TransitionMap Lhs => "-->"
+   ARROW => "destination state"
+   ARROW State * => "rhs word"
+   ARROW * State * COMMA * Word * * => "L,S,R, or integer"
+   Rhs * => "newline"
+   ACCEPTING 4 => "state"
+   BLANK * * => "a newline"
+   ALPHABET * => "a symbol"
+
+
+input was read succesfully
+
+warning: the following symbols have been declared, but do not occur in the grammar:
+   { EMPTY, BADFILE, COMMENT, WHITESPACE, GARBAGE, _recover_ }
+TRANSITIONS TransitionMap State MachineWithInputs TransitionMap Lhs ARROW ARROW State ARROW State COMMA Word Rhs ACCEPTING BLANK ALPHABET starting closure
+all states have been generated
+adding reductions
+ending closure
+
+Parsetable:
+====================================
+
+Initial States:
+   MachineWithInputs : state 0
+
+
+state 0:
+   OptNewLines =>  #  /  { ALPHABET }
+   MachineWithInputs =>  # OptNewLines ALPHABET CharacterSet NewLines STARTING State NewLines ACCEPTING StateSet NewLines BLANK CHAR NewLines TRANSITIONS NewLines TransitionMap OptInputs  /  { EOF }
+
+Shifts:
+   MachineWithInputs :  46
+   OptNewLines :  3
+   NewLines :  2
+   NL :  1
+
+Reductions:
+   ALPHABET :  17
+
+
+state 1:
+   NewLines =>  NL #  /  { State, ALPHABET, STARTING, NL, Word, BLANK, Words, INPUTS, Transition, TransitionMap, ACCEPTING, OptInputs, TRANSITIONS, CHAR, EOF, STRING, Lhs }
+
+Reductions:
+   Lhs :  15
+   STRING :  15
+   EOF :  15
+   CHAR :  15
+   State :  15
+   ALPHABET :  15
+   STARTING :  15
+   NL :  15
+   Word :  15
+   BLANK :  15
+   TransitionMap :  15
+   ACCEPTING :  15
+   OptInputs :  15
+   INPUTS :  15
+   Transition :  15
+   Words :  15
+   TRANSITIONS :  15
+
+
+state 2:
+   OptNewLines =>  NewLines #  /  { ALPHABET }
+   NewLines =>  NewLines # NL  /  { NL, ALPHABET }
+
+Shifts:
+   NL :  4
+
+Reductions:
+   ALPHABET :  18
+
+
+state 3:
+   MachineWithInputs =>  OptNewLines # ALPHABET CharacterSet NewLines STARTING State NewLines ACCEPTING StateSet NewLines BLANK CHAR NewLines TRANSITIONS NewLines TransitionMap OptInputs  /  { EOF }
+
+Shifts:
+   ALPHABET :  5
+
+
+state 4:
+   NewLines =>  NewLines NL #  /  { State, ALPHABET, STARTING, NL, Word, BLANK, Words, INPUTS, Transition, TransitionMap, ACCEPTING, OptInputs, TRANSITIONS, CHAR, EOF, STRING, Lhs }
+
+Reductions:
+   Lhs :  16
+   STRING :  16
+   EOF :  16
+   CHAR :  16
+   State :  16
+   ALPHABET :  16
+   STARTING :  16
+   NL :  16
+   Word :  16
+   BLANK :  16
+   TransitionMap :  16
+   ACCEPTING :  16
+   OptInputs :  16
+   INPUTS :  16
+   Transition :  16
+   Words :  16
+   TRANSITIONS :  16
+
+
+state 5:
+   CharacterSet =>  #  /  { CHAR, NL, NewLines }
+   MachineWithInputs =>  OptNewLines ALPHABET # CharacterSet NewLines STARTING State NewLines ACCEPTING StateSet NewLines BLANK CHAR NewLines TRANSITIONS NewLines TransitionMap OptInputs  /  { EOF }
+
+Shifts:
+   CharacterSet :  6
+
+Reductions:
+   NewLines :  1
+   NL :  1
+   CHAR :  1
+
+
+state 6:
+   MachineWithInputs =>  OptNewLines ALPHABET CharacterSet # NewLines STARTING State NewLines ACCEPTING StateSet NewLines BLANK CHAR NewLines TRANSITIONS NewLines TransitionMap OptInputs  /  { EOF }
+   CharacterSet =>  CharacterSet # CHAR  /  { CHAR, NL, NewLines }
+
+Shifts:
+   CHAR :  8
+   NL :  1
+   NewLines :  7
+
+
+state 7:
+   MachineWithInputs =>  OptNewLines ALPHABET CharacterSet NewLines # STARTING State NewLines ACCEPTING StateSet NewLines BLANK CHAR NewLines TRANSITIONS NewLines TransitionMap OptInputs  /  { EOF }
+   NewLines =>  NewLines # NL  /  { NL, STARTING }
+
+Shifts:
+   NL :  4
+   STARTING :  9
+
+
+state 8:
+   CharacterSet =>  CharacterSet CHAR #  /  { CHAR, NL, NewLines }
+
+Reductions:
+   NewLines :  2
+   NL :  2
+   CHAR :  2
+
+
+state 9:
+   MachineWithInputs =>  OptNewLines ALPHABET CharacterSet NewLines STARTING # State NewLines ACCEPTING StateSet NewLines BLANK CHAR NewLines TRANSITIONS NewLines TransitionMap OptInputs  /  { EOF }
+
+Shifts:
+   State :  13
+   Word :  12
+   STRING :  11
+   CHAR :  10
+
+
+state 10:
+   Word =>  CHAR #  /  { State, Word, COMMA, STRING, CHAR, NewLines, NL }
+
+Reductions:
+   NL :  11
+   NewLines :  11
+   CHAR :  11
+   STRING :  11
+   COMMA :  11
+   Word :  11
+   State :  11
+
+
+state 11:
+   Word =>  STRING #  /  { State, Word, COMMA, STRING, CHAR, NewLines, NL }
+
+Reductions:
+   NL :  12
+   NewLines :  12
+   CHAR :  12
+   STRING :  12
+   COMMA :  12
+   Word :  12
+   State :  12
+
+
+state 12:
+   State =>  Word #  /  { State, Word, COMMA, STRING, CHAR, NL, NewLines }
+
+Reductions:
+   NewLines :  13
+   NL :  13
+   CHAR :  13
+   STRING :  13
+   COMMA :  13
+   Word :  13
+   State :  13
+
+
+state 13:
+   MachineWithInputs =>  OptNewLines ALPHABET CharacterSet NewLines STARTING State # NewLines ACCEPTING StateSet NewLines BLANK CHAR NewLines TRANSITIONS NewLines TransitionMap OptInputs  /  { EOF }
+
+Shifts:
+   NewLines :  14
+   NL :  1
+
+
+state 14:
+   MachineWithInputs =>  OptNewLines ALPHABET CharacterSet NewLines STARTING State NewLines # ACCEPTING StateSet NewLines BLANK CHAR NewLines TRANSITIONS NewLines TransitionMap OptInputs  /  { EOF }
+   NewLines =>  NewLines # NL  /  { NL, ACCEPTING }
+
+Shifts:
+   NL :  4
+   ACCEPTING :  15
+
+
+state 15:
+   StateSet =>  #  /  { CHAR, STRING, Word, State, NL, NewLines }
+   MachineWithInputs =>  OptNewLines ALPHABET CharacterSet NewLines STARTING State NewLines ACCEPTING # StateSet NewLines BLANK CHAR NewLines TRANSITIONS NewLines TransitionMap OptInputs  /  { EOF }
+
+Shifts:
+   StateSet :  16
+
+Reductions:
+   NewLines :  3
+   NL :  3
+   State :  3
+   Word :  3
+   STRING :  3
+   CHAR :  3
+
+
+state 16:
+   MachineWithInputs =>  OptNewLines ALPHABET CharacterSet NewLines STARTING State NewLines ACCEPTING StateSet # NewLines BLANK CHAR NewLines TRANSITIONS NewLines TransitionMap OptInputs  /  { EOF }
+   StateSet =>  StateSet # State  /  { CHAR, STRING, Word, State, NL, NewLines }
+
+Shifts:
+   State :  18
+   NewLines :  17
+   NL :  1
+   Word :  12
+   STRING :  11
+   CHAR :  10
+
+
+state 17:
+   MachineWithInputs =>  OptNewLines ALPHABET CharacterSet NewLines STARTING State NewLines ACCEPTING StateSet NewLines # BLANK CHAR NewLines TRANSITIONS NewLines TransitionMap OptInputs  /  { EOF }
+   NewLines =>  NewLines # NL  /  { NL, BLANK }
+
+Shifts:
+   NL :  4
+   BLANK :  19
+
+
+state 18:
+   StateSet =>  StateSet State #  /  { CHAR, STRING, Word, State, NL, NewLines }
+
+Reductions:
+   NewLines :  4
+   NL :  4
+   State :  4
+   Word :  4
+   STRING :  4
+   CHAR :  4
+
+
+state 19:
+   MachineWithInputs =>  OptNewLines ALPHABET CharacterSet NewLines STARTING State NewLines ACCEPTING StateSet NewLines BLANK # CHAR NewLines TRANSITIONS NewLines TransitionMap OptInputs  /  { EOF }
+
+Shifts:
+   CHAR :  20
+
+
+state 20:
+   MachineWithInputs =>  OptNewLines ALPHABET CharacterSet NewLines STARTING State NewLines ACCEPTING StateSet NewLines BLANK CHAR # NewLines TRANSITIONS NewLines TransitionMap OptInputs  /  { EOF }
+
+Shifts:
+   NewLines :  21
+   NL :  1
+
+
+state 21:
+   MachineWithInputs =>  OptNewLines ALPHABET CharacterSet NewLines STARTING State NewLines ACCEPTING StateSet NewLines BLANK CHAR NewLines # TRANSITIONS NewLines TransitionMap OptInputs  /  { EOF }
+   NewLines =>  NewLines # NL  /  { NL, TRANSITIONS }
+
+Shifts:
+   NL :  4
+   TRANSITIONS :  22
+
+
+state 22:
+   MachineWithInputs =>  OptNewLines ALPHABET CharacterSet NewLines STARTING State NewLines ACCEPTING StateSet NewLines BLANK CHAR NewLines TRANSITIONS # NewLines TransitionMap OptInputs  /  { EOF }
+
+Shifts:
+   NewLines :  23
+   NL :  1
+
+
+state 23:
+   TransitionMap =>  #  /  { STRING, Word, State, Lhs, INPUTS, Transition, OptInputs, CHAR, EOF }
+   MachineWithInputs =>  OptNewLines ALPHABET CharacterSet NewLines STARTING State NewLines ACCEPTING StateSet NewLines BLANK CHAR NewLines TRANSITIONS NewLines # TransitionMap OptInputs  /  { EOF }
+   NewLines =>  NewLines # NL  /  { CHAR, EOF, STRING, Word, Lhs, Transition, OptInputs, State, TransitionMap, NL, INPUTS }
+
+Shifts:
+   NL :  4
+   TransitionMap :  24
+
+Reductions:
+   EOF :  5
+   CHAR :  5
+   OptInputs :  5
+   Transition :  5
+   INPUTS :  5
+   Lhs :  5
+   State :  5
+   Word :  5
+   STRING :  5
+
+
+state 24:
+   MachineWithInputs =>  OptNewLines ALPHABET CharacterSet NewLines STARTING State NewLines ACCEPTING StateSet NewLines BLANK CHAR NewLines TRANSITIONS NewLines TransitionMap # OptInputs  /  { EOF }
+   OptInputs =>  #  /  { EOF }
+   TransitionMap =>  TransitionMap # Transition  /  { STRING, Word, State, Lhs, INPUTS, Transition, OptInputs, CHAR, EOF }
+
+Shifts:
+   Transition :  29
+   OptInputs :  28
+   Word :  12
+   Lhs :  27
+   INPUTS :  26
+   State :  25
+   STRING :  11
+   CHAR :  10
+
+Reductions:
+   EOF :  19
+
+
+state 25:
+   Lhs =>  State # COMMA CHAR  /  { ARROW }
+
+Shifts:
+   COMMA :  30
+
+
+state 26:
+   OptInputs =>  INPUTS # NewLines Words  /  { EOF }
+
+Shifts:
+   NewLines :  31
+   NL :  1
+
+
+state 27:
+   Transition =>  Lhs # ARROW Rhs NewLines  /  { STRING, Word, State, Lhs, INPUTS, Transition, OptInputs, CHAR, EOF }
+
+Shifts:
+   ARROW :  32
+
+
+state 28:
+   MachineWithInputs =>  OptNewLines ALPHABET CharacterSet NewLines STARTING State NewLines ACCEPTING StateSet NewLines BLANK CHAR NewLines TRANSITIONS NewLines TransitionMap OptInputs #  /  { EOF }
+
+Reductions:
+   EOF :  0
+
+
+state 29:
+   TransitionMap =>  TransitionMap Transition #  /  { STRING, Word, State, Lhs, INPUTS, Transition, OptInputs, CHAR, EOF }
+
+Reductions:
+   EOF :  6
+   CHAR :  6
+   OptInputs :  6
+   Transition :  6
+   INPUTS :  6
+   Lhs :  6
+   State :  6
+   Word :  6
+   STRING :  6
+
+
+state 30:
+   Lhs =>  State COMMA # CHAR  /  { ARROW }
+
+Shifts:
+   CHAR :  33
+
+
+state 31:
+   Words =>  #  /  { STRING, Word, CHAR, EOF }
+   OptInputs =>  INPUTS NewLines # Words  /  { EOF }
+   NewLines =>  NewLines # NL  /  { NL, CHAR, EOF, STRING, Word, Words }
+
+Shifts:
+   NL :  4
+   Words :  34
+
+Reductions:
+   EOF :  21
+   CHAR :  21
+   Word :  21
+   STRING :  21
+
+
+state 32:
+   Transition =>  Lhs ARROW # Rhs NewLines  /  { STRING, Word, State, Lhs, INPUTS, Transition, OptInputs, CHAR, EOF }
+
+Shifts:
+   Rhs :  36
+   State :  35
+   Word :  12
+   STRING :  11
+   CHAR :  10
+
+
+state 33:
+   Lhs =>  State COMMA CHAR #  /  { ARROW }
+
+Reductions:
+   ARROW :  8
+
+
+state 34:
+   OptInputs =>  INPUTS NewLines Words #  /  { EOF }
+   Words =>  Words # Word NewLines  /  { STRING, Word, CHAR, EOF }
+
+Shifts:
+   Word :  37
+   STRING :  11
+   CHAR :  10
+
+Reductions:
+   EOF :  20
+
+
+state 35:
+   Rhs =>  State # COMMA Word COMMA LeftRightStat  /  { NL, NewLines }
+   Rhs =>  State # COMMA Word COMMA INTEGER  /  { NL, NewLines }
+
+Shifts:
+   COMMA :  38
+
+
+state 36:
+   Transition =>  Lhs ARROW Rhs # NewLines  /  { STRING, Word, State, Lhs, INPUTS, Transition, OptInputs, CHAR, EOF }
+
+Shifts:
+   NewLines :  39
+   NL :  1
+
+
+state 37:
+   Words =>  Words Word # NewLines  /  { STRING, Word, CHAR, EOF }
+
+Shifts:
+   NewLines :  40
+   NL :  1
+
+
+state 38:
+   Rhs =>  State COMMA # Word COMMA INTEGER  /  { NL, NewLines }
+   Rhs =>  State COMMA # Word COMMA LeftRightStat  /  { NL, NewLines }
+
+Shifts:
+   Word :  41
+   STRING :  11
+   CHAR :  10
+
+
+state 39:
+   Transition =>  Lhs ARROW Rhs NewLines #  /  { STRING, Word, State, Lhs, INPUTS, Transition, OptInputs, CHAR, EOF }
+   NewLines =>  NewLines # NL  /  { STRING, Word, State, Lhs, Transition, OptInputs, INPUTS, NL, CHAR, EOF }
+
+Shifts:
+   NL :  4
+
+Reductions:
+   EOF :  7
+   CHAR :  7
+   OptInputs :  7
+   Transition :  7
+   INPUTS :  7
+   Lhs :  7
+   State :  7
+   Word :  7
+   STRING :  7
+
+
+state 40:
+   Words =>  Words Word NewLines #  /  { STRING, Word, CHAR, EOF }
+   NewLines =>  NewLines # NL  /  { STRING, Word, NL, CHAR, EOF }
+
+Shifts:
+   NL :  4
+
+Reductions:
+   EOF :  22
+   CHAR :  22
+   Word :  22
+   STRING :  22
+
+
+state 41:
+   Rhs =>  State COMMA Word # COMMA LeftRightStat  /  { NL, NewLines }
+   Rhs =>  State COMMA Word # COMMA INTEGER  /  { NL, NewLines }
+
+Shifts:
+   COMMA :  42
+
+
+state 42:
+   Rhs =>  State COMMA Word COMMA # INTEGER  /  { NL, NewLines }
+   Rhs =>  State COMMA Word COMMA # LeftRightStat  /  { NL, NewLines }
+
+Shifts:
+   LeftRightStat :  45
+   INTEGER :  44
+   CHAR :  43
+
+
+state 43:
+   LeftRightStat =>  CHAR #  /  { NL, NewLines }
+
+Reductions:
+   NewLines :  14
+   NL :  14
+
+
+state 44:
+   Rhs =>  State COMMA Word COMMA INTEGER #  /  { NL, NewLines }
+
+Reductions:
+   NewLines :  9
+   NL :  9
+
+
+state 45:
+   Rhs =>  State COMMA Word COMMA LeftRightStat #  /  { NL, NewLines }
+
+Reductions:
+   NewLines :  10
+   NL :  10
+
+
+state 46:
+
+
+
+
+note that there are warnings
+
+symbol definition will be put in ./symbol.h and ./symbol.cpp
+
+opening file ../../idee.x
+parser definition will be put in ./parser.h and ./parser.cpp
+

@@ -5,19 +5,19 @@
 
 #include <vector>
 
-#include "filereader.h"
 #include "tokenizing.h"
 #include "errors.h"
 #include "symbolcodebuilder.h"
 #include "parsercodebuilder.h"
 #include "cpp/codefragment.h" 
 
+
 struct ourownparser
 {
-   filereader read;
+   lexing::filereader read;
    std::pair< token, size_t > lookahead;
 
-   ourownparser( filereader&& read )
+   ourownparser( lexing::filereader&& read )
       : read( std::move( read )),
         lookahead( std::pair( tok_empty, 0 ))
    { } 

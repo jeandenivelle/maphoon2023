@@ -1,0 +1,39 @@
+
+  Attributes:  
+  Replace symbols by pairs 
+   where the first value is the symbol value 
+   second value is an attribute (attached meaning)
+   E is start symbol
+
+   E ->  E + F    :  $$ = $1 + $3
+     ->  F        :  $$ = $1
+
+   F -> num       :  $$ = $1
+     -> ( E )     :  $$ = $2
+     -> id :      :  $$ = varstore. lookup( $1 ) 
+                          
+   E,F,num   : attribute number (double)
+   ( ) +     : attribute T (empty attribute)
+   id        : attribute std::string 
+  
+   1 + 2 + 3  we want to compute it. 
+   F/1 + 2 + 3
+   E/1 + 2 + 3
+   E/1 + F/2 + 3
+   E/3 + 3
+   E/3 + F/3
+   E/6
+   we can rewrite it into E 
+
+    we want to make a parser.
+
+   do it by automatically. Result is
+     a bottom up parser. 
+
+   Write a formal description of the attribute grammar. 
+      Declare for each symbol, the type of possible attributes.
+      Add to each grammar rule some code that tells how to compute 
+        attribute of left side. 
+
+  
+

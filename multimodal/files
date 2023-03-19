@@ -1,0 +1,13 @@
+
+multimodal
+
+multimodal.cpp
+tokenizer.cpp
+../filereader.cpp
+symbol.cpp
+../../lexing2022/stateset.cpp
+../../lexing2022/partition.cpp
+form.cpp
+agent.cpp
+parser.cpp
+

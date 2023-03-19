@@ -1,0 +1,2843 @@
+whitespace/1
+identifier/3
+separator/2
+identifier/6
+whitespace/1
+rbrace/1
+whitespace/1
+identifier/3
+separator/2
+identifier/6
+whitespace/1
+rbrace/1
+whitespace/1
+identifier/8
+whitespace/1
+identifier/3
+whitespace/1
+rbrace/1
+whitespace/1
+identifier/4
+whitespace/1
+rbrace/1
+whitespace/1
+identifier/3
+separator/2
+identifier/6
+whitespace/1
+rbrace/1
+whitespace/1
+identifier/4
+whitespace/1
+rbrace/1
+whitespace/1
+identifier/4
+whitespace/1
+rbrace/1
+whitespace/1
+identifier/5
+whitespace/1
+rbrace/1
+whitespace/1
+cpp_include/8
+whitespace/1
+string/8
+whitespace/1
+rbrace/1
+whitespace/1
+cpp_include/8
+whitespace/1
+string/13
+whitespace/1
+rbrace/1
+whitespace/1
+cpp_include/8
+whitespace/1
+string/26
+whitespace/1
+rbrace/1
+whitespace/4
+identifier/4
+whitespace/1
+identifier/10
+lpar/1
+whitespace/1
+identifier/5
+whitespace/1
+identifier/4
+ampersand/1
+whitespace/1
+identifier/1
+comma/1
+whitespace/1
+identifier/3
+separator/2
+identifier/7
+ampersand/1
+whitespace/1
+identifier/3
+whitespace/1
+rpar/1
+whitespace/7
+lbrace/1
+whitespace/1
+identifier/3
+whitespace/1
+lt/1
+lt/1
+whitespace/1
+identifier/1
+semicolon/1
+whitespace/1
+rbrace/1
+whitespace/3
+comment/57
+whitespace/1
+comment/21
+whitespace/1
+rbrace/1
+whitespace/4
+identifier/9
+whitespace/4
+lbrace/1
+whitespace/8
+comment/37
+whitespace/7
+comment/16
+whitespace/7
+comment/22
+whitespace/7
+comment/29
+whitespace/8
+identifier/5
+whitespace/1
+identifier/3
+whitespace/1
+identifier/6
+lpar/1
+whitespace/1
+identifier/10
+whitespace/1
+identifier/2
+comma/1
+whitespace/1
+identifier/10
+whitespace/1
+identifier/2
+whitespace/1
+rpar/1
+whitespace/8
+lbrace/1
+whitespace/10
+comment/64
+whitespace/11
+identifier/2
+lpar/1
+whitespace/1
+identifier/2
+whitespace/1
+cpp_operator/2
+whitespace/1
+identifier/7
+whitespace/1
+cpp_operator/1
+cpp_operator/1
+whitespace/1
+identifier/2
+whitespace/1
+cpp_operator/2
+whitespace/1
+identifier/7
+whitespace/1
+cpp_operator/1
+cpp_operator/1
+whitespace/1
+identifier/2
+whitespace/1
+cpp_operator/2
+whitespace/1
+identifier/7
+whitespace/1
+cpp_operator/1
+cpp_operator/1
+whitespace/1
+identifier/2
+whitespace/1
+cpp_operator/2
+whitespace/1
+identifier/7
+whitespace/1
+rpar/1
+whitespace/13
+identifier/6
+whitespace/1
+double/1
+semicolon/1
+whitespace/11
+identifier/2
+lpar/1
+whitespace/1
+identifier/2
+whitespace/1
+cpp_operator/2
+whitespace/1
+identifier/6
+whitespace/1
+rpar/1
+whitespace/10
+lbrace/1
+whitespace/13
+identifier/2
+lpar/1
+whitespace/1
+identifier/2
+whitespace/1
+cpp_operator/2
+whitespace/1
+identifier/7
+whitespace/1
+rpar/1
+whitespace/17
+identifier/6
+whitespace/1
+double/1
+semicolon/1
+whitespace/13
+identifier/6
+whitespace/1
+double/1
+semicolon/1
+whitespace/10
+rbrace/1
+whitespace/11
+identifier/2
+lpar/1
+whitespace/1
+identifier/2
+whitespace/1
+cpp_operator/2
+whitespace/1
+identifier/7
+whitespace/1
+rpar/1
+whitespace/10
+lbrace/1
+whitespace/13
+identifier/2
+lpar/1
+whitespace/1
+identifier/2
+whitespace/1
+cpp_operator/2
+whitespace/1
+identifier/7
+whitespace/1
+cpp_operator/1
+cpp_operator/1
+whitespace/1
+identifier/2
+whitespace/1
+cpp_operator/2
+whitespace/1
+identifier/6
+whitespace/1
+cpp_operator/1
+cpp_operator/1
+whitespace/1
+identifier/2
+whitespace/1
+cpp_operator/2
+whitespace/1
+identifier/7
+whitespace/1
+rpar/1
+whitespace/16
+identifier/6
+whitespace/1
+double/1
+semicolon/1
+whitespace/13
+identifier/6
+whitespace/1
+double/1
+semicolon/1
+whitespace/10
+rbrace/1
+whitespace/11
+identifier/2
+lpar/1
+whitespace/1
+identifier/2
+whitespace/1
+cpp_operator/2
+whitespace/1
+identifier/9
+whitespace/1
+rpar/1
+whitespace/10
+lbrace/1
+whitespace/13
+identifier/2
+lpar/1
+whitespace/1
+identifier/2
+whitespace/1
+cpp_operator/2
+whitespace/1
+identifier/7
+whitespace/1
+cpp_operator/1
+cpp_operator/1
+whitespace/1
+identifier/2
+whitespace/1
+cpp_operator/2
+whitespace/1
+identifier/6
+whitespace/1
+cpp_operator/1
+cpp_operator/1
+whitespace/1
+identifier/2
+whitespace/1
+cpp_operator/2
+whitespace/1
+identifier/7
+whitespace/1
+rpar/1
+whitespace/16
+identifier/6
+whitespace/1
+double/1
+semicolon/1
+whitespace/14
+identifier/2
+lpar/1
+whitespace/1
+identifier/2
+whitespace/1
+cpp_operator/2
+whitespace/1
+identifier/9
+whitespace/1
+rpar/1
+whitespace/16
+identifier/6
+whitespace/1
+double/2
+semicolon/1
+whitespace/13
+identifier/6
+whitespace/1
+double/1
+semicolon/1
+whitespace/11
+rbrace/1
+whitespace/11
+identifier/5
+whitespace/1
+identifier/3
+separator/2
+identifier/13
+lpar/1
+whitespace/1
+string/23
+whitespace/1
+rpar/1
+semicolon/1
+whitespace/8
+rbrace/1
+whitespace/4
+rbrace/1
+whitespace/1
+rbrace/1
+whitespace/1
+identifier/3
+dot/1
+whitespace/1
+identifier/3
+lpar/1
+whitespace/1
+rpar/1
+semicolon/1
+whitespace/1
+rbrace/1
+whitespace/1
+identifier/9
+whitespace/1
+rbrace/1
+whitespace/1
+identifier/8
+lt/1
+identifier/4
+gt/1
+whitespace/1
+rbrace/1
+whitespace/1
+identifier/3
+separator/2
+identifier/4
+whitespace/1
+lt/1
+lt/1
+whitespace/1
+string/15
+semicolon/1
+whitespace/1
+identifier/1
+dot/1
+whitespace/1
+identifier/11
+lpar/1
+whitespace/1
+identifier/3
+separator/2
+identifier/4
+whitespace/1
+rpar/1
+semicolon/1
+whitespace/7
+identifier/3
+separator/2
+identifier/4
+whitespace/1
+lt/1
+lt/1
+whitespace/1
+string/4
+semicolon/1
+whitespace/1
+identifier/6
+whitespace/1
+identifier/1
+semicolon/1
+whitespace/1
+rbrace/1
+whitespace/1
+identifier/3
+separator/2
+identifier/4
+whitespace/1
+lt/1
+lt/1
+whitespace/1
+string/12
+semicolon/1
+whitespace/6
+identifier/1
+dot/1
+whitespace/1
+identifier/11
+lpar/1
+whitespace/1
+identifier/3
+separator/2
+identifier/4
+whitespace/1
+rpar/1
+semicolon/1
+whitespace/7
+identifier/16
+whitespace/1
+cpp_operator/1
+whitespace/1
+identifier/4
+semicolon/1
+whitespace/1
+identifier/6
+whitespace/1
+identifier/1
+semicolon/1
+whitespace/1
+rbrace/1
+whitespace/1
+identifier/2
+dot/1
+whitespace/1
+identifier/6
+lpar/1
+whitespace/1
+identifier/3
+comma/1
+whitespace/1
+identifier/1
+whitespace/1
+rpar/1
+semicolon/1
+whitespace/1
+identifier/6
+whitespace/1
+identifier/1
+semicolon/1
+whitespace/1
+rbrace/1
+whitespace/1
+identifier/6
+whitespace/1
+identifier/4
+lpar/1
+whitespace/1
+string/7
+whitespace/1
+rpar/1
+semicolon/1
+whitespace/1
+rbrace/1
+whitespace/1
+identifier/6
+whitespace/1
+identifier/4
+lpar/1
+whitespace/1
+string/7
+whitespace/1
+rpar/1
+semicolon/1
+whitespace/1
+rbrace/1
+whitespace/1
+identifier/6
+whitespace/1
+identifier/4
+lpar/1
+whitespace/1
+string/7
+whitespace/1
+rpar/1
+semicolon/1
+whitespace/1
+rbrace/1
+whitespace/1
+identifier/6
+whitespace/1
+identifier/1
+semicolon/1
+whitespace/1
+rbrace/1
+whitespace/1
+identifier/6
+whitespace/1
+identifier/4
+lpar/1
+whitespace/1
+identifier/1
+whitespace/1
+cpp_operator/1
+whitespace/1
+identifier/7
+whitespace/1
+colon/1
+whitespace/1
+identifier/8
+whitespace/1
+rpar/1
+semicolon/1
+whitespace/1
+rbrace/1
+whitespace/1
+identifier/6
+whitespace/1
+identifier/6
+lpar/1
+whitespace/1
+identifier/7
+comma/1
+whitespace/1
+identifier/12
+lpar/1
+whitespace/1
+rpar/1
+dot/1
+whitespace/1
+identifier/4
+whitespace/1
+rpar/1
+semicolon/1
+whitespace/1
+rbrace/1
+whitespace/1
+identifier/6
+whitespace/1
+identifier/4
+lpar/1
+whitespace/1
+identifier/6
+comma/1
+whitespace/1
+identifier/1
+whitespace/1
+rpar/1
+semicolon/1
+whitespace/1
+rbrace/1
+whitespace/1
+identifier/6
+whitespace/1
+identifier/6
+lpar/1
+whitespace/1
+identifier/7
+comma/1
+whitespace/1
+identifier/12
+lpar/1
+whitespace/1
+rpar/1
+dot/1
+whitespace/1
+identifier/4
+whitespace/1
+rpar/1
+semicolon/1
+whitespace/1
+rbrace/1
+whitespace/1
+identifier/6
+whitespace/1
+identifier/4
+lpar/1
+whitespace/1
+identifier/6
+comma/1
+whitespace/1
+identifier/2
+comma/1
+whitespace/1
+identifier/2
+whitespace/1
+rpar/1
+semicolon/1
+whitespace/1
+rbrace/1
+whitespace/1
+identifier/6
+whitespace/1
+identifier/6
+lpar/1
+whitespace/1
+identifier/6
+comma/1
+whitespace/1
+identifier/12
+lpar/1
+whitespace/1
+rpar/1
+dot/1
+whitespace/1
+identifier/4
+whitespace/1
+rpar/1
+semicolon/1
+whitespace/1
+rbrace/1
+whitespace/1
+identifier/6
+whitespace/1
+identifier/4
+lpar/1
+whitespace/1
+identifier/5
+comma/1
+whitespace/1
+identifier/2
+comma/1
+whitespace/1
+identifier/2
+whitespace/1
+rpar/1
+semicolon/1
+whitespace/1
+rbrace/1
+whitespace/1
+identifier/6
+whitespace/1
+identifier/6
+lpar/1
+whitespace/1
+identifier/7
+comma/1
+whitespace/1
+identifier/12
+lpar/1
+whitespace/1
+rpar/1
+dot/1
+whitespace/1
+identifier/4
+whitespace/1
+rpar/1
+semicolon/1
+whitespace/1
+rbrace/1
+whitespace/1
+identifier/6
+whitespace/1
+identifier/4
+lpar/1
+whitespace/1
+identifier/6
+comma/1
+whitespace/1
+identifier/2
+comma/1
+whitespace/1
+identifier/2
+whitespace/1
+rpar/1
+semicolon/1
+whitespace/1
+rbrace/1
+whitespace/1
+identifier/6
+whitespace/1
+identifier/6
+lpar/1
+whitespace/1
+identifier/9
+comma/1
+whitespace/1
+identifier/12
+lpar/1
+whitespace/1
+rpar/1
+dot/1
+whitespace/1
+identifier/4
+whitespace/1
+rpar/1
+semicolon/1
+whitespace/1
+rbrace/1
+whitespace/1
+identifier/6
+whitespace/1
+identifier/4
+lpar/1
+whitespace/1
+identifier/8
+comma/1
+whitespace/1
+identifier/2
+comma/1
+whitespace/1
+identifier/2
+whitespace/1
+rpar/1
+semicolon/1
+whitespace/1
+rbrace/1
+whitespace/1
+identifier/6
+whitespace/1
+identifier/6
+lpar/1
+whitespace/1
+identifier/7
+comma/1
+whitespace/1
+identifier/12
+lpar/1
+whitespace/1
+rpar/1
+dot/1
+whitespace/1
+identifier/4
+whitespace/1
+rpar/1
+semicolon/1
+whitespace/1
+rbrace/1
+whitespace/1
+identifier/6
+whitespace/1
+identifier/4
+lpar/1
+whitespace/1
+identifier/6
+comma/1
+whitespace/1
+identifier/1
+comma/1
+whitespace/1
+identifier/1
+whitespace/1
+rpar/1
+semicolon/1
+whitespace/1
+rbrace/1
+whitespace/1
+identifier/6
+whitespace/1
+identifier/6
+lpar/1
+whitespace/1
+identifier/7
+comma/1
+whitespace/1
+identifier/12
+lpar/1
+whitespace/1
+rpar/1
+dot/1
+whitespace/1
+identifier/4
+whitespace/1
+rpar/1
+semicolon/1
+whitespace/1
+rbrace/1
+whitespace/1
+identifier/6
+whitespace/1
+identifier/4
+lpar/1
+whitespace/1
+identifier/6
+comma/1
+whitespace/1
+identifier/1
+comma/1
+whitespace/1
+identifier/1
+whitespace/1
+rpar/1
+semicolon/1
+whitespace/1
+rbrace/1
+whitespace/1
+identifier/6
+whitespace/1
+identifier/6
+lpar/1
+whitespace/1
+identifier/7
+comma/1
+whitespace/1
+identifier/12
+lpar/1
+whitespace/1
+rpar/1
+dot/1
+whitespace/1
+identifier/4
+whitespace/1
+rpar/1
+semicolon/1
+whitespace/1
+rbrace/1
+whitespace/1
+identifier/6
+whitespace/1
+identifier/4
+lpar/1
+whitespace/1
+identifier/6
+comma/1
+whitespace/1
+identifier/1
+comma/1
+whitespace/1
+identifier/1
+whitespace/1
+rpar/1
+semicolon/1
+whitespace/1
+rbrace/1
+whitespace/1
+identifier/6
+whitespace/1
+identifier/6
+lpar/1
+whitespace/1
+identifier/7
+comma/1
+whitespace/1
+identifier/12
+lpar/1
+whitespace/1
+rpar/1
+dot/1
+whitespace/1
+identifier/4
+whitespace/1
+rpar/1
+semicolon/1
+whitespace/1
+rbrace/1
+whitespace/1
+identifier/6
+whitespace/1
+identifier/4
+lpar/1
+whitespace/1
+identifier/6
+comma/1
+whitespace/1
+identifier/1
+comma/1
+whitespace/1
+identifier/1
+whitespace/1
+rpar/1
+semicolon/1
+whitespace/1
+rbrace/1
+whitespace/1
+identifier/6
+whitespace/1
+identifier/6
+lpar/1
+whitespace/1
+identifier/7
+comma/1
+whitespace/1
+identifier/12
+lpar/1
+whitespace/1
+rpar/1
+dot/1
+whitespace/1
+identifier/4
+whitespace/1
+rpar/1
+semicolon/1
+whitespace/1
+rbrace/1
+whitespace/1
+identifier/6
+whitespace/1
+identifier/4
+lpar/1
+whitespace/1
+identifier/6
+comma/1
+whitespace/1
+string/4
+comma/1
+whitespace/1
+identifier/1
+whitespace/1
+rpar/1
+semicolon/1
+whitespace/1
+rbrace/1
+whitespace/1
+identifier/6
+whitespace/1
+identifier/6
+lpar/1
+whitespace/1
+identifier/7
+comma/1
+whitespace/1
+identifier/12
+lpar/1
+whitespace/1
+rpar/1
+dot/1
+whitespace/1
+identifier/4
+whitespace/1
+rpar/1
+semicolon/1
+whitespace/1
+rbrace/1
+whitespace/1
+identifier/6
+whitespace/1
+identifier/4
+lpar/1
+whitespace/1
+identifier/6
+comma/1
+whitespace/1
+string/4
+comma/1
+whitespace/1
+identifier/1
+whitespace/1
+rpar/1
+semicolon/1
+whitespace/1
+rbrace/1
+whitespace/1
+identifier/6
+whitespace/1
+identifier/1
+semicolon/1
+whitespace/1
+rbrace/1
+whitespace/1
+identifier/6
+whitespace/1
+identifier/4
+lpar/1
+whitespace/1
+identifier/6
+comma/1
+whitespace/1
+identifier/5
+lpar/1
+whitespace/1
+string/7
+whitespace/1
+rpar/1
+comma/1
+whitespace/1
+identifier/8
+whitespace/1
+rpar/1
+semicolon/1
+whitespace/1
+rbrace/1
+whitespace/7
+identifier/2
+lpar/1
+whitespace/1
+identifier/2
+dot/1
+whitespace/1
+identifier/8
+lpar/1
+whitespace/1
+identifier/3
+whitespace/1
+rpar/1
+rpar/1
+whitespace/10
+identifier/6
+whitespace/1
+star/1
+identifier/2
+dot/1
+whitespace/1
+identifier/6
+lpar/1
+whitespace/1
+identifier/3
+whitespace/1
+rpar/1
+semicolon/1
+whitespace/8
+identifier/4
+whitespace/10
+identifier/6
+whitespace/1
+identifier/4
+lpar/1
+whitespace/1
+identifier/6
+comma/1
+whitespace/1
+identifier/5
+lpar/1
+whitespace/1
+string/11
+whitespace/1
+rpar/1
+comma/1
+whitespace/1
+identifier/8
+whitespace/1
+rpar/1
+semicolon/1
+whitespace/5
+rbrace/1
+whitespace/1
+identifier/6
+whitespace/1
+identifier/1
+dot/1
+whitespace/1
+identifier/3
+lpar/1
+double/1
+rpar/1
+semicolon/1
+whitespace/1
+rbrace/1
+whitespace/1
+identifier/6
+whitespace/1
+identifier/4
+lpar/1
+whitespace/1
+identifier/6
+comma/1
+whitespace/1
+identifier/5
+lpar/1
+whitespace/1
+string/11
+whitespace/1
+rpar/1
+comma/1
+whitespace/1
+identifier/8
+whitespace/1
+rpar/1
+semicolon/1
+whitespace/1
+rbrace/1
+whitespace/1
+identifier/6
+whitespace/1
+identifier/1
+semicolon/1
+whitespace/1
+rbrace/1
+whitespace/1
+identifier/6
+whitespace/1
+identifier/1
+semicolon/1
+whitespace/1
+rbrace/1
+whitespace/1
+identifier/6
+whitespace/1
+identifier/3
+separator/2
+identifier/6
+lpar/1
+whitespace/1
+string/3
+whitespace/1
+rpar/1
+whitespace/1
+cpp_operator/1
+whitespace/1
+identifier/3
+separator/2
+identifier/9
+lpar/1
+identifier/1
+rpar/1
+semicolon/1
+whitespace/1
+rbrace/1
+filereader( grammar.m, 240, 0 ) :  (end of file)
+lookahead: eof/0
+
+symbolcodebuilder:
+
+code for .h:
+from file grammar.m, line 35 :
+   35 :    #include "form.h" 
+
+
+namespace:
+   
+
+infotype: void
+
+code for .cpp:
+from file grammar.m, line 40 :
+   40 :   
+   41 :      {void} {print_attr}( {const} {form}& {f}, {std}::{ostream}& {out} )
+   42 :         { {out} << {f}; }
+   43 :   
+   44 :   
+   45 :   //   void print_attr( const agent& a, std::ostream& out )
+   46 :   //      { out << a; }
+   47 :   
+
+
+declared attributes:
+   AND : void
+   Var : std::string
+   SEMICOLON : void
+   DIA : void
+   BECOMES : void
+   WHITESPACE : void
+   DIAEND : void
+   CONST : bool
+   ID : std::string
+   Index : agent
+   COMMENT : void
+   BOXEND : void
+   RETURN : void
+   Session : void
+   ERROR : void
+   OR : void
+   IMP : void
+   LEFTPAR : void
+   RIGHTPAR : void
+   BOX : void
+   NOT : void
+   BOXSTART : void
+   EOF : void
+   EQUIV : void
+   Command : form
+   DIASTART : void
+   NNF : void
+   NUMBER : unsigned int
+   METAVAR : std::string
+   Formula : form
+
+
+parsercodebuilder:
+
+namespace =      
+source =          from file , line 95 :
+   95 :    {tok}. {get}( ); 
+
+parameters:
+   tok :       tokenizer
+   vs :       varstore<form>
+
+code for .h:
+from file grammar.m, line 36 :
+   36 :    #include "tokenizer.h" 
+   37 :    #include "../calculator/varstore.h" 
+
+
+code for .cpp:
+from file grammar.m, line 50 :
+   50 :   
+   51 :      {namespace}
+   52 :      {
+   53 :   
+   54 :         // We are deciding about reducing t1.
+   55 :         // 1 : we reduce
+   56 :         // 0 : we don't reduce
+   57 :         // -1 : we do not even shift.
+   58 :   
+   59 :         {short} {int} {decide}( {symboltype} {t1}, {symboltype} {t2} ) 
+   60 :         {
+   61 :            // std::cout << "Deciding between: " << t1 << " " << t2 << "\n";
+   62 :   
+   63 :            {if}( {t1} == {sym_NOT} || {t1} == {sym_DIA} || {t1} == {sym_BOX} || {t1} == {sym_AND} )
+   64 :               {return} 1;
+   65 :   
+   66 :            {if}( {t1} == {sym_OR} )
+   67 :            {
+   68 :               {if}( {t2} == {sym_AND} ) 
+   69 :                  {return} 0;
+   70 :               {return} 1;
+   71 :            }
+   72 :   
+   73 :            {if}( {t1} == {sym_IMP} )
+   74 :            {
+   75 :               {if}( {t2} == {sym_AND} || {t2} == {sym_OR} || {t2} == {sym_IMP} )
+   76 :                  {return} 0;
+   77 :               {return} 1;
+   78 :            }
+   79 :   
+   80 :            {if}( {t1} == {sym_EQUIV} )
+   81 :            {
+   82 :               {if}( {t2} == {sym_AND} || {t2} == {sym_OR} || {t2} == {sym_IMP} )
+   83 :                  {return} 0; 
+   84 :               {if}( {t2} == {sym_EQUIV} )
+   85 :                  {return} -1;
+   86 :               {return} 1; 
+   87 :            }
+   88 :   
+   89 :            {throw} {std}::{runtime_error}( "should be unreachable" ); 
+   90 :         }
+   91 :      }
+   92 :   
+
+
+Start Symbols with their Lookahead Sets:
+   Session : { EOF }
+
+
+Rules:
+
+(0)   Session  =>  Session Command
+(1)   Session  =>  
+(2)   Command  =>  Formula SEMICOLON
+(3)   Command  =>  RETURN Formula SEMICOLON
+(4)   Command  =>  METAVAR BECOMES Formula SEMICOLON
+(5)   Command  =>  _recover_ SEMICOLON
+(6)   Command  =>  RIGHTPAR _recover_ SEMICOLON
+(7)   Command  =>  BOXEND _recover_ SEMICOLON
+(8)   Formula  =>  Var
+(9)   Formula  =>  CONST
+(10)   Formula  =>  NOT Formula
+(11)   Formula  =>  Formula AND Formula
+(12)   Formula  =>  Formula OR Formula
+(13)   Formula  =>  Formula IMP Formula
+(14)   Formula  =>  Formula EQUIV Formula
+(15)   Formula  =>  BOX Index Formula
+(16)   Formula  =>  BOXSTART Index BOXEND Formula
+(17)   Formula  =>  DIA Index Formula
+(18)   Formula  =>  DIASTART Index DIAEND Formula
+(19)   Formula  =>  BOX Formula
+(20)   Formula  =>  DIA Formula
+(21)   Formula  =>  LEFTPAR Formula RIGHTPAR
+(22)   Formula  =>  LEFTPAR _recover_ RIGHTPAR
+(23)   Formula  =>  METAVAR
+(24)   Formula  =>  NNF LEFTPAR Formula RIGHTPAR
+(25)   Formula  =>  NNF LEFTPAR _recover_ RIGHTPAR
+(26)   Var  =>  ID
+(27)   Index  =>  ID
+(28)   Index  =>  NUMBER
+
+
+
+#2: reduction( f : 0 )
+from file grammar.m, line 109 :
+   109 :    {std}::{cout} << "    formula: "; {f}. {printprefix}( {std}::{cout} ); 
+   110 :        {std}::{cout} << "\n"; {return} {f}; 
+
+#3: reduction( f : 1 )
+from file grammar.m, line 113 :
+   113 :    {std}::{cout} << "returning ";
+   114 :        {f}. {printprefix}( {std}::{cout} ); 
+   115 :        {timetosaygoodbye} = {true}; {return} {f}; 
+
+#4: reduction( f : 2, var : 0 )
+from file grammar.m, line 118 :
+   118 :    {vs}. {assign}( {var}, {f} ); {return} {f}; 
+
+#5: reduction
+from file grammar.m, line 121 :
+   121 :    {return} {form}( "ERROR" ); 
+
+#6: reduction
+from file grammar.m, line 124 :
+   124 :    {return} {form}( "ERROR" ); 
+
+#7: reduction
+from file grammar.m, line 127 :
+   127 :    {return} {form}( "ERROR" ); 
+
+#8: reduction( v : 0 )
+from file grammar.m, line 131 :
+   131 :    {return} {v}; 
+
+#9: reduction( b : 0 )
+from file grammar.m, line 133 :
+   133 :    {return} {form}( {b} ? {op_true} : {op_false} ); 
+
+#10: reduction( f : 1 )
+? from file grammar.m, line 138 :
+   138 :    {return} {decide}( {sym_NOT}, {getlookahead}( ). {type} ); 
+
+from file grammar.m, line 140 :
+   140 :    {return} {form}( {op_not}, {f} ); 
+
+#11: reduction( f2 : 2, f1 : 0 )
+? from file grammar.m, line 145 :
+   145 :    {return} {decide}( {sym_AND}, {getlookahead}( ). {type} ); 
+
+from file grammar.m, line 147 :
+   147 :    {return} {form}( {op_and}, {f1}, {f2} ); 
+
+#12: reduction( f2 : 2, f1 : 0 )
+? from file grammar.m, line 152 :
+   152 :    {return} {decide}( {sym_OR}, {getlookahead}( ). {type} ); 
+
+from file grammar.m, line 154 :
+   154 :    {return} {form}( {op_or}, {f1}, {f2} ); 
+
+#13: reduction( f2 : 2, f1 : 0 )
+? from file grammar.m, line 159 :
+   159 :    {return} {decide}( {sym_IMP}, {getlookahead}( ). {type} ); 
+
+from file grammar.m, line 161 :
+   161 :    {return} {form}( {op_imp}, {f1}, {f2} ); 
+
+#14: reduction( f2 : 2, f1 : 0 )
+? from file grammar.m, line 166 :
+   166 :    {return} {decide}( {sym_EQUIV}, {getlookahead}( ). {type} ); 
+
+from file grammar.m, line 168 :
+   168 :    {return} {form}( {op_equiv}, {f1}, {f2} ); 
+
+#15: reduction( f : 2, a : 1 )
+? from file grammar.m, line 173 :
+   173 :    {return} {decide}( {sym_BOX}, {getlookahead}( ). {type} ); 
+
+from file grammar.m, line 175 :
+   175 :    {return} {form}( {op_box}, {a}, {f} ); 
+
+#16: reduction( f : 3, a : 1 )
+? from file grammar.m, line 180 :
+   180 :    {return} {decide}( {sym_BOX}, {getlookahead}( ). {type} ); 
+
+from file grammar.m, line 182 :
+   182 :    {return} {form}( {op_box}, {a}, {f} ); 
+
+#17: reduction( f : 2, a : 1 )
+? from file grammar.m, line 187 :
+   187 :    {return} {decide}( {sym_DIA}, {getlookahead}( ). {type} ); 
+
+from file grammar.m, line 189 :
+   189 :    {return} {form}( {op_dia}, {a}, {f} ); 
+
+#18: reduction( f : 3, a : 1 )
+? from file grammar.m, line 194 :
+   194 :    {return} {decide}( {sym_DIA}, {getlookahead}( ). {type} ); 
+
+from file grammar.m, line 196 :
+   196 :    {return} {form}( {op_dia}, {a}, {f} ); 
+
+#19: reduction( f : 1 )
+? from file grammar.m, line 201 :
+   201 :    {return} {decide}( {sym_DIA}, {getlookahead}( ). {type} ); 
+
+from file grammar.m, line 203 :
+   203 :    {return} {form}( {op_box}, "#1", {f} ); 
+
+#20: reduction( f : 1 )
+? from file grammar.m, line 208 :
+   208 :    {return} {decide}( {sym_BOX}, {getlookahead}( ). {type} ); 
+
+from file grammar.m, line 210 :
+   210 :    {return} {form}( {op_dia}, "#1", {f} ); 
+
+#21: reduction( f : 1 )
+from file grammar.m, line 212 :
+   212 :    {return} {f}; 
+
+#22: reduction
+from file grammar.m, line 215 :
+   215 :    {return} {form}( {op_dia}, {agent}( "ERROR" ), {op_false} ); 
+
+#23: reduction( var : 0 )
+from file grammar.m, line 219 :
+   219 :   
+   220 :         {if}( {vs}. {contains}( {var} ))
+   221 :            {return} *{vs}. {lookup}( {var} ); 
+   222 :         {else}
+   223 :            {return} {form}( {op_dia}, {agent}( "NOT FOUND" ), {op_false} ); 
+   224 :      
+
+#24: reduction( f : 2 )
+from file grammar.m, line 227 :
+   227 :    {return} {f}. {nnf}(1); 
+
+#25: reduction
+from file grammar.m, line 230 :
+   230 :    {return} {form}( {op_dia}, {agent}( "wrong NNF" ), {op_false} ); 
+
+#26: reduction( v : 0 )
+from file grammar.m, line 234 :
+   234 :    {return} {v}; 
+
+#27: reduction( v : 0 )
+from file grammar.m, line 236 :
+   236 :    {return} {v}; 
+
+#28: reduction( n : 0 )
+from file grammar.m, line 237 :
+   237 :    {return} {std}::{string}( "#" ) + {std}::{to_string}({n}); 
+
+
+input was read succesfully
+
+warning: the following symbols have been declared, but do not occur in the grammar:
+   { ERROR, COMMENT, WHITESPACE }
+starting closure
+all states have been generated
+adding reductions
+replacing states by theire closures
+replaced
+ending closure
+
+Parsetable:
+====================================
+
+Initial States:
+   Session : state 0
+
+
+state 0:
+   Session =>  # Session Command  /  { NNF, Formula, BOX, RETURN, BOXEND, EOF, CONST, RIGHTPAR, ID, LEFTPAR, _recover_, NOT, DIASTART, METAVAR, BOXSTART, Command, DIA, Var }
+   Session =>  #  /  { Var, DIA, Command, BOXSTART, METAVAR, EOF, NNF, NOT, Formula, BOX, RETURN, BOXEND, CONST, RIGHTPAR, ID, _recover_, LEFTPAR, DIASTART }
+
+Shifts:
+   Session :  1
+
+Reductions:
+   DIASTART :  1
+   LEFTPAR :  1
+   _recover_ :  1
+   ID :  1
+   RIGHTPAR :  1
+   Var :  1
+   DIA :  1
+   Command :  1
+   BOXSTART :  1
+   METAVAR :  1
+   EOF :  1
+   BOXEND :  1
+   RETURN :  1
+   NNF :  1
+   NOT :  1
+   Formula :  1
+   BOX :  1
+   CONST :  1
+
+
+state 1:
+   Var =>  # ID  /  { SEMICOLON, IMP, OR, EQUIV, AND }
+   Formula =>  # DIA Formula  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # BOX Formula  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # DIASTART Index DIAEND Formula  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # BOXSTART Index BOXEND Formula  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # BOX Index Formula  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula EQUIV Formula  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula IMP Formula  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula OR Formula  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula AND Formula  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # NOT Formula  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # CONST  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # DIA Index Formula  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Session =>  Session # Command  /  { NNF, Formula, BOX, RETURN, BOXEND, EOF, CONST, RIGHTPAR, ID, LEFTPAR, _recover_, NOT, DIASTART, METAVAR, BOXSTART, Command, DIA, Var }
+   Command =>  # BOXEND _recover_ SEMICOLON  /  { NNF, Formula, BOX, RETURN, BOXEND, Var, DIA, Command, BOXSTART, METAVAR, DIASTART, NOT, LEFTPAR, _recover_, CONST, ID, RIGHTPAR, EOF }
+   Command =>  # RIGHTPAR _recover_ SEMICOLON  /  { NNF, Formula, BOX, RETURN, BOXEND, Var, DIA, Command, BOXSTART, METAVAR, DIASTART, NOT, LEFTPAR, _recover_, CONST, ID, RIGHTPAR, EOF }
+   Command =>  # _recover_ SEMICOLON  /  { NNF, Formula, BOX, RETURN, BOXEND, Var, DIA, Command, BOXSTART, METAVAR, DIASTART, NOT, LEFTPAR, _recover_, CONST, ID, RIGHTPAR, EOF }
+   Command =>  # METAVAR BECOMES Formula SEMICOLON  /  { NNF, Formula, BOX, RETURN, BOXEND, Var, DIA, Command, BOXSTART, METAVAR, DIASTART, NOT, LEFTPAR, _recover_, CONST, ID, RIGHTPAR, EOF }
+   Command =>  # RETURN Formula SEMICOLON  /  { NNF, Formula, BOX, RETURN, BOXEND, Var, DIA, Command, BOXSTART, METAVAR, DIASTART, NOT, LEFTPAR, _recover_, CONST, ID, RIGHTPAR, EOF }
+   Command =>  # Formula SEMICOLON  /  { NNF, Formula, BOX, RETURN, BOXEND, Var, DIA, Command, BOXSTART, METAVAR, DIASTART, NOT, LEFTPAR, _recover_, CONST, ID, RIGHTPAR, EOF }
+   Formula =>  # NNF LEFTPAR _recover_ RIGHTPAR  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # NNF LEFTPAR Formula RIGHTPAR  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # METAVAR  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # LEFTPAR _recover_ RIGHTPAR  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # LEFTPAR Formula RIGHTPAR  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Var  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+
+Shifts:
+   DIASTART :  18
+   ID :  17
+   RIGHTPAR :  16
+   BOX :  15
+   CONST :  2
+   NOT :  3
+   NNF :  9
+   Command :  4
+   BOXSTART :  5
+   METAVAR :  8
+   Var :  6
+   DIA :  7
+   Formula :  10
+   BOXEND :  11
+   RETURN :  12
+   LEFTPAR :  13
+   _recover_ :  14
+
+
+state 2:
+   Formula =>  CONST #  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+
+Reductions:
+   SEMICOLON :  9
+   EQUIV :  9
+   AND :  9
+   IMP :  9
+   OR :  9
+   RIGHTPAR :  9
+
+
+state 3:
+   Var =>  # ID  /  { RIGHTPAR, SEMICOLON, IMP, OR, EQUIV, AND }
+   Formula =>  # DIA Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # BOX Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # DIASTART Index DIAEND Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # DIA Index Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # BOXSTART Index BOXEND Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # BOX Index Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  NOT # Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # METAVAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # NOT Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # NNF LEFTPAR _recover_ RIGHTPAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula OR Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # NNF LEFTPAR Formula RIGHTPAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula AND Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # LEFTPAR _recover_ RIGHTPAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # CONST  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # LEFTPAR Formula RIGHTPAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Var  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula IMP Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula EQUIV Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+
+Shifts:
+   Formula :  20
+   Var :  6
+   LEFTPAR :  13
+   DIA :  7
+   CONST :  2
+   ID :  17
+   BOX :  15
+   DIASTART :  18
+   BOXSTART :  5
+   METAVAR :  19
+   NOT :  3
+   NNF :  9
+
+
+state 4:
+   Session =>  Session Command #  /  { NNF, Formula, BOX, RETURN, BOXEND, EOF, CONST, RIGHTPAR, ID, LEFTPAR, _recover_, NOT, DIASTART, METAVAR, BOXSTART, Command, DIA, Var }
+
+Reductions:
+   Var :  0
+   DIA :  0
+   Command :  0
+   BOXSTART :  0
+   METAVAR :  0
+   NNF :  0
+   NOT :  0
+   Formula :  0
+   BOX :  0
+   EOF :  0
+   RETURN :  0
+   BOXEND :  0
+   CONST :  0
+   RIGHTPAR :  0
+   ID :  0
+   _recover_ :  0
+   LEFTPAR :  0
+   DIASTART :  0
+
+
+state 5:
+   Index =>  # ID  /  { BOXEND }
+   Index =>  # NUMBER  /  { BOXEND }
+   Formula =>  BOXSTART # Index BOXEND Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+
+Shifts:
+   Index :  23
+   NUMBER :  22
+   ID :  21
+
+
+state 6:
+   Formula =>  Var #  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+
+Reductions:
+   SEMICOLON :  8
+   EQUIV :  8
+   AND :  8
+   IMP :  8
+   OR :  8
+   RIGHTPAR :  8
+
+
+state 7:
+   Index =>  # ID  /  { DIASTART, BOX, ID, CONST, Var, DIA, LEFTPAR, BOXSTART, METAVAR, NOT, NNF, Formula }
+   Index =>  # NUMBER  /  { DIASTART, BOX, ID, CONST, Var, DIA, LEFTPAR, BOXSTART, METAVAR, NOT, NNF, Formula }
+   Var =>  # ID  /  { RIGHTPAR, SEMICOLON, IMP, OR, EQUIV, AND }
+   Formula =>  # DIA Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # BOX Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # DIASTART Index DIAEND Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # DIA Index Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # BOXSTART Index BOXEND Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # BOX Index Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula EQUIV Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  DIA # Index Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # NNF LEFTPAR _recover_ RIGHTPAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula OR Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # NNF LEFTPAR Formula RIGHTPAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula AND Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # METAVAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # NOT Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # LEFTPAR _recover_ RIGHTPAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # CONST  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # LEFTPAR Formula RIGHTPAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  DIA # Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Var  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula IMP Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+
+Shifts:
+   BOX :  15
+   Formula :  24
+   LEFTPAR :  13
+   DIA :  7
+   Var :  6
+   CONST :  2
+   ID :  25
+   NOT :  3
+   NNF :  9
+   METAVAR :  19
+   BOXSTART :  5
+   Index :  26
+   NUMBER :  22
+   DIASTART :  18
+
+
+state 8:
+   Formula =>  METAVAR #  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Command =>  METAVAR # BECOMES Formula SEMICOLON  /  { NNF, Formula, BOX, RETURN, BOXEND, Var, DIA, Command, BOXSTART, METAVAR, DIASTART, NOT, LEFTPAR, _recover_, CONST, ID, RIGHTPAR, EOF }
+
+Shifts:
+   BECOMES :  27
+
+Reductions:
+   SEMICOLON :  23
+   EQUIV :  23
+   AND :  23
+   IMP :  23
+   OR :  23
+
+
+state 9:
+   Formula =>  NNF # LEFTPAR Formula RIGHTPAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  NNF # LEFTPAR _recover_ RIGHTPAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+
+Shifts:
+   LEFTPAR :  28
+
+
+state 10:
+   Command =>  Formula # SEMICOLON  /  { NNF, Formula, BOX, RETURN, BOXEND, Var, DIA, Command, BOXSTART, METAVAR, DIASTART, NOT, LEFTPAR, _recover_, CONST, ID, RIGHTPAR, EOF }
+   Formula =>  Formula # AND Formula  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  Formula # OR Formula  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  Formula # IMP Formula  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  Formula # EQUIV Formula  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+
+Shifts:
+   EQUIV :  33
+   AND :  32
+   IMP :  31
+   OR :  30
+   SEMICOLON :  29
+
+
+state 11:
+   Command =>  BOXEND # _recover_ SEMICOLON  /  { NNF, Formula, BOX, RETURN, BOXEND, Var, DIA, Command, BOXSTART, METAVAR, DIASTART, NOT, LEFTPAR, _recover_, CONST, ID, RIGHTPAR, EOF }
+
+Shifts:
+   _recover_ :  34
+
+
+state 12:
+   Var =>  # ID  /  { SEMICOLON, IMP, OR, EQUIV, AND }
+   Formula =>  # BOX Formula  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # DIASTART Index DIAEND Formula  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # DIA Index Formula  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # BOXSTART Index BOXEND Formula  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # BOX Index Formula  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # DIA Formula  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Command =>  RETURN # Formula SEMICOLON  /  { NNF, Formula, BOX, RETURN, BOXEND, Var, DIA, Command, BOXSTART, METAVAR, DIASTART, NOT, LEFTPAR, _recover_, CONST, ID, RIGHTPAR, EOF }
+   Formula =>  # NNF LEFTPAR _recover_ RIGHTPAR  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula OR Formula  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # NNF LEFTPAR Formula RIGHTPAR  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula AND Formula  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # METAVAR  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # NOT Formula  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # LEFTPAR _recover_ RIGHTPAR  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # CONST  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # LEFTPAR Formula RIGHTPAR  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Var  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula IMP Formula  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula EQUIV Formula  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+
+Shifts:
+   Formula :  35
+   Var :  6
+   LEFTPAR :  13
+   DIA :  7
+   CONST :  2
+   ID :  17
+   NOT :  3
+   NNF :  9
+   BOX :  15
+   DIASTART :  18
+   BOXSTART :  5
+   METAVAR :  19
+
+
+state 13:
+   Var =>  # ID  /  { RIGHTPAR, IMP, OR, EQUIV, AND }
+   Formula =>  # DIA Formula  /  { OR, IMP, AND, EQUIV, RIGHTPAR }
+   Formula =>  # BOX Formula  /  { OR, IMP, AND, EQUIV, RIGHTPAR }
+   Formula =>  # DIASTART Index DIAEND Formula  /  { OR, IMP, AND, EQUIV, RIGHTPAR }
+   Formula =>  # DIA Index Formula  /  { OR, IMP, AND, EQUIV, RIGHTPAR }
+   Formula =>  # BOXSTART Index BOXEND Formula  /  { OR, IMP, AND, EQUIV, RIGHTPAR }
+   Formula =>  # BOX Index Formula  /  { OR, IMP, AND, EQUIV, RIGHTPAR }
+   Formula =>  # Formula EQUIV Formula  /  { OR, IMP, AND, EQUIV, RIGHTPAR }
+   Formula =>  # LEFTPAR _recover_ RIGHTPAR  /  { OR, IMP, AND, EQUIV, RIGHTPAR }
+   Formula =>  # CONST  /  { OR, IMP, AND, EQUIV, RIGHTPAR }
+   Formula =>  LEFTPAR # Formula RIGHTPAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # LEFTPAR Formula RIGHTPAR  /  { OR, IMP, AND, EQUIV, RIGHTPAR }
+   Formula =>  # Var  /  { OR, IMP, AND, EQUIV, RIGHTPAR }
+   Formula =>  # NNF LEFTPAR _recover_ RIGHTPAR  /  { OR, IMP, AND, EQUIV, RIGHTPAR }
+   Formula =>  # Formula OR Formula  /  { OR, IMP, AND, EQUIV, RIGHTPAR }
+   Formula =>  # NNF LEFTPAR Formula RIGHTPAR  /  { OR, IMP, AND, EQUIV, RIGHTPAR }
+   Formula =>  # Formula AND Formula  /  { OR, IMP, AND, EQUIV, RIGHTPAR }
+   Formula =>  # METAVAR  /  { OR, IMP, AND, EQUIV, RIGHTPAR }
+   Formula =>  LEFTPAR # _recover_ RIGHTPAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # NOT Formula  /  { OR, IMP, AND, EQUIV, RIGHTPAR }
+   Formula =>  # Formula IMP Formula  /  { OR, IMP, AND, EQUIV, RIGHTPAR }
+
+Shifts:
+   Formula :  37
+   NOT :  3
+   NNF :  9
+   _recover_ :  36
+   BOX :  15
+   METAVAR :  19
+   BOXSTART :  5
+   ID :  17
+   CONST :  2
+   DIA :  7
+   LEFTPAR :  13
+   DIASTART :  18
+   Var :  6
+
+
+state 14:
+   Command =>  _recover_ # SEMICOLON  /  { NNF, Formula, BOX, RETURN, BOXEND, Var, DIA, Command, BOXSTART, METAVAR, DIASTART, NOT, LEFTPAR, _recover_, CONST, ID, RIGHTPAR, EOF }
+
+Shifts:
+   SEMICOLON :  38
+
+
+state 15:
+   Index =>  # ID  /  { DIASTART, BOX, ID, CONST, Var, DIA, LEFTPAR, BOXSTART, METAVAR, NOT, NNF, Formula }
+   Index =>  # NUMBER  /  { DIASTART, BOX, ID, CONST, Var, DIA, LEFTPAR, BOXSTART, METAVAR, NOT, NNF, Formula }
+   Var =>  # ID  /  { RIGHTPAR, SEMICOLON, IMP, OR, EQUIV, AND }
+   Formula =>  # DIA Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # BOX Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # DIASTART Index DIAEND Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # DIA Index Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # BOXSTART Index BOXEND Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # BOX Index Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula EQUIV Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  BOX # Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  BOX # Index Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # NNF LEFTPAR _recover_ RIGHTPAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula OR Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # NNF LEFTPAR Formula RIGHTPAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula AND Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # METAVAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # NOT Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # LEFTPAR _recover_ RIGHTPAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # CONST  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # LEFTPAR Formula RIGHTPAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Var  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula IMP Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+
+Shifts:
+   BOX :  15
+   Formula :  39
+   LEFTPAR :  13
+   DIA :  7
+   Var :  6
+   CONST :  2
+   ID :  25
+   NOT :  3
+   NNF :  9
+   METAVAR :  19
+   BOXSTART :  5
+   Index :  40
+   NUMBER :  22
+   DIASTART :  18
+
+
+state 16:
+   Command =>  RIGHTPAR # _recover_ SEMICOLON  /  { NNF, Formula, BOX, RETURN, BOXEND, Var, DIA, Command, BOXSTART, METAVAR, DIASTART, NOT, LEFTPAR, _recover_, CONST, ID, RIGHTPAR, EOF }
+
+Shifts:
+   _recover_ :  41
+
+
+state 17:
+   Var =>  ID #  /  { RIGHTPAR, SEMICOLON, IMP, OR, EQUIV, AND }
+
+Reductions:
+   AND :  26
+   EQUIV :  26
+   OR :  26
+   IMP :  26
+   SEMICOLON :  26
+   RIGHTPAR :  26
+
+
+state 18:
+   Index =>  # ID  /  { DIAEND }
+   Index =>  # NUMBER  /  { DIAEND }
+   Formula =>  DIASTART # Index DIAEND Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+
+Shifts:
+   Index :  42
+   NUMBER :  22
+   ID :  21
+
+
+state 19:
+   Formula =>  METAVAR #  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+
+Reductions:
+   SEMICOLON :  23
+   EQUIV :  23
+   AND :  23
+   IMP :  23
+   OR :  23
+   RIGHTPAR :  23
+
+
+state 20:
+   Formula =>  Formula # EQUIV Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  Formula # IMP Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  Formula # AND Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  Formula # OR Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  NOT Formula #  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+
+Shifts:
+   OR :  30
+   AND :  32
+   EQUIV :  33
+   IMP :  31
+
+Reductions:
+   SEMICOLON :  10
+   EQUIV :  10
+   AND :  10
+   IMP :  10
+   OR :  10
+   RIGHTPAR :  10
+
+
+state 21:
+   Index =>  ID #  /  { DIAEND, BOXEND }
+
+Reductions:
+   BOXEND :  27
+   DIAEND :  27
+
+
+state 22:
+   Index =>  NUMBER #  /  { DIAEND, BOXEND, DIASTART, BOX, ID, CONST, Var, DIA, LEFTPAR, BOXSTART, METAVAR, NOT, NNF, Formula }
+
+Reductions:
+   Formula :  28
+   DIAEND :  28
+   BOXSTART :  28
+   METAVAR :  28
+   BOXEND :  28
+   DIASTART :  28
+   BOX :  28
+   ID :  28
+   CONST :  28
+   Var :  28
+   DIA :  28
+   LEFTPAR :  28
+   NOT :  28
+   NNF :  28
+
+
+state 23:
+   Formula =>  BOXSTART Index # BOXEND Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+
+Shifts:
+   BOXEND :  43
+
+
+state 24:
+   Formula =>  Formula # IMP Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  DIA Formula #  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  Formula # AND Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  Formula # OR Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  Formula # EQUIV Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+
+Shifts:
+   EQUIV :  33
+   AND :  32
+   OR :  30
+   IMP :  31
+
+Reductions:
+   SEMICOLON :  20
+   EQUIV :  20
+   AND :  20
+   IMP :  20
+   OR :  20
+   RIGHTPAR :  20
+
+
+state 25:
+   Var =>  ID #  /  { RIGHTPAR, SEMICOLON, IMP, OR, EQUIV, AND }
+   Index =>  ID #  /  { DIASTART, BOX, ID, CONST, Var, DIA, LEFTPAR, BOXSTART, METAVAR, NOT, NNF, Formula }
+
+Reductions:
+   Formula :  27
+   NNF :  27
+   NOT :  27
+   METAVAR :  27
+   BOXSTART :  27
+   DIASTART :  27
+   IMP :  26
+   RIGHTPAR :  26
+   ID :  27
+   CONST :  27
+   EQUIV :  26
+   AND :  26
+   BOX :  27
+   SEMICOLON :  26
+   Var :  27
+   DIA :  27
+   OR :  26
+   LEFTPAR :  27
+
+
+state 26:
+   Var =>  # ID  /  { RIGHTPAR, SEMICOLON, IMP, OR, EQUIV, AND }
+   Formula =>  # DIA Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # BOX Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # DIASTART Index DIAEND Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # DIA Index Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # BOXSTART Index BOXEND Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # BOX Index Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # NNF LEFTPAR _recover_ RIGHTPAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula OR Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # NNF LEFTPAR Formula RIGHTPAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula AND Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # METAVAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # NOT Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  DIA Index # Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # LEFTPAR _recover_ RIGHTPAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # CONST  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # LEFTPAR Formula RIGHTPAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Var  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula IMP Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula EQUIV Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+
+Shifts:
+   Formula :  44
+   Var :  6
+   LEFTPAR :  13
+   DIA :  7
+   CONST :  2
+   ID :  17
+   BOX :  15
+   DIASTART :  18
+   BOXSTART :  5
+   METAVAR :  19
+   NNF :  9
+   NOT :  3
+
+
+state 27:
+   Var =>  # ID  /  { SEMICOLON, IMP, OR, EQUIV, AND }
+   Formula =>  # DIA Formula  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # BOX Formula  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # DIASTART Index DIAEND Formula  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # DIA Index Formula  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # BOXSTART Index BOXEND Formula  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # BOX Index Formula  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # NNF LEFTPAR _recover_ RIGHTPAR  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula OR Formula  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # NNF LEFTPAR Formula RIGHTPAR  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula AND Formula  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # METAVAR  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # NOT Formula  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # LEFTPAR _recover_ RIGHTPAR  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Command =>  METAVAR BECOMES # Formula SEMICOLON  /  { NNF, Formula, BOX, RETURN, BOXEND, Var, DIA, Command, BOXSTART, METAVAR, DIASTART, NOT, LEFTPAR, _recover_, CONST, ID, RIGHTPAR, EOF }
+   Formula =>  # CONST  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # LEFTPAR Formula RIGHTPAR  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Var  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula IMP Formula  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula EQUIV Formula  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+
+Shifts:
+   Formula :  45
+   Var :  6
+   LEFTPAR :  13
+   DIA :  7
+   CONST :  2
+   ID :  17
+   BOX :  15
+   DIASTART :  18
+   BOXSTART :  5
+   METAVAR :  19
+   NNF :  9
+   NOT :  3
+
+
+state 28:
+   Var =>  # ID  /  { RIGHTPAR, IMP, OR, EQUIV, AND }
+   Formula =>  # DIA Formula  /  { OR, IMP, AND, EQUIV, RIGHTPAR }
+   Formula =>  # BOX Formula  /  { OR, IMP, AND, EQUIV, RIGHTPAR }
+   Formula =>  # DIASTART Index DIAEND Formula  /  { OR, IMP, AND, EQUIV, RIGHTPAR }
+   Formula =>  # DIA Index Formula  /  { OR, IMP, AND, EQUIV, RIGHTPAR }
+   Formula =>  # BOXSTART Index BOXEND Formula  /  { OR, IMP, AND, EQUIV, RIGHTPAR }
+   Formula =>  # BOX Index Formula  /  { OR, IMP, AND, EQUIV, RIGHTPAR }
+   Formula =>  # Formula EQUIV Formula  /  { OR, IMP, AND, EQUIV, RIGHTPAR }
+   Formula =>  NNF LEFTPAR # Formula RIGHTPAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # NNF LEFTPAR Formula RIGHTPAR  /  { OR, IMP, AND, EQUIV, RIGHTPAR }
+   Formula =>  # Formula AND Formula  /  { OR, IMP, AND, EQUIV, RIGHTPAR }
+   Formula =>  NNF LEFTPAR # _recover_ RIGHTPAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # NNF LEFTPAR _recover_ RIGHTPAR  /  { OR, IMP, AND, EQUIV, RIGHTPAR }
+   Formula =>  # Formula OR Formula  /  { OR, IMP, AND, EQUIV, RIGHTPAR }
+   Formula =>  # METAVAR  /  { OR, IMP, AND, EQUIV, RIGHTPAR }
+   Formula =>  # NOT Formula  /  { OR, IMP, AND, EQUIV, RIGHTPAR }
+   Formula =>  # LEFTPAR _recover_ RIGHTPAR  /  { OR, IMP, AND, EQUIV, RIGHTPAR }
+   Formula =>  # CONST  /  { OR, IMP, AND, EQUIV, RIGHTPAR }
+   Formula =>  # LEFTPAR Formula RIGHTPAR  /  { OR, IMP, AND, EQUIV, RIGHTPAR }
+   Formula =>  # Var  /  { OR, IMP, AND, EQUIV, RIGHTPAR }
+   Formula =>  # Formula IMP Formula  /  { OR, IMP, AND, EQUIV, RIGHTPAR }
+
+Shifts:
+   Formula :  47
+   Var :  6
+   LEFTPAR :  13
+   DIA :  7
+   CONST :  2
+   ID :  17
+   NOT :  3
+   NNF :  9
+   METAVAR :  19
+   BOXSTART :  5
+   BOX :  15
+   _recover_ :  46
+   DIASTART :  18
+
+
+state 29:
+   Command =>  Formula SEMICOLON #  /  { NNF, Formula, BOX, RETURN, BOXEND, Var, DIA, Command, BOXSTART, METAVAR, DIASTART, NOT, LEFTPAR, _recover_, CONST, ID, RIGHTPAR, EOF }
+
+Reductions:
+   EOF :  2
+   RIGHTPAR :  2
+   ID :  2
+   CONST :  2
+   NNF :  2
+   NOT :  2
+   Formula :  2
+   BOX :  2
+   RETURN :  2
+   BOXEND :  2
+   Var :  2
+   DIA :  2
+   _recover_ :  2
+   LEFTPAR :  2
+   Command :  2
+   BOXSTART :  2
+   METAVAR :  2
+   DIASTART :  2
+
+
+state 30:
+   Var =>  # ID  /  { RIGHTPAR, SEMICOLON, IMP, OR, EQUIV, AND }
+   Formula =>  # DIA Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # BOX Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # DIASTART Index DIAEND Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # BOXSTART Index BOXEND Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # BOX Index Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # DIA Index Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  Formula OR # Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # NNF LEFTPAR _recover_ RIGHTPAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula OR Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # NNF LEFTPAR Formula RIGHTPAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula AND Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # METAVAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # NOT Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # LEFTPAR _recover_ RIGHTPAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # CONST  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # LEFTPAR Formula RIGHTPAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Var  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula IMP Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula EQUIV Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+
+Shifts:
+   Formula :  48
+   Var :  6
+   LEFTPAR :  13
+   DIA :  7
+   CONST :  2
+   ID :  17
+   NOT :  3
+   NNF :  9
+   BOX :  15
+   DIASTART :  18
+   BOXSTART :  5
+   METAVAR :  19
+
+
+state 31:
+   Var =>  # ID  /  { RIGHTPAR, SEMICOLON, IMP, OR, EQUIV, AND }
+   Formula =>  # DIA Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # BOX Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # DIA Index Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # BOXSTART Index BOXEND Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # BOX Index Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # DIASTART Index DIAEND Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  Formula IMP # Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula IMP Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # NNF LEFTPAR _recover_ RIGHTPAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula OR Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # NNF LEFTPAR Formula RIGHTPAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula AND Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # METAVAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # NOT Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # LEFTPAR _recover_ RIGHTPAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # CONST  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # LEFTPAR Formula RIGHTPAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Var  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula EQUIV Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+
+Shifts:
+   Formula :  49
+   Var :  6
+   LEFTPAR :  13
+   DIA :  7
+   CONST :  2
+   ID :  17
+   NOT :  3
+   NNF :  9
+   METAVAR :  19
+   BOXSTART :  5
+   BOX :  15
+   DIASTART :  18
+
+
+state 32:
+   Var =>  # ID  /  { RIGHTPAR, SEMICOLON, IMP, OR, EQUIV, AND }
+   Formula =>  # DIA Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # BOX Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # DIASTART Index DIAEND Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # DIA Index Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # BOX Index Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # BOXSTART Index BOXEND Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  Formula AND # Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # NNF LEFTPAR Formula RIGHTPAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula AND Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # NNF LEFTPAR _recover_ RIGHTPAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula OR Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # METAVAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # NOT Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # LEFTPAR _recover_ RIGHTPAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # CONST  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # LEFTPAR Formula RIGHTPAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Var  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula IMP Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula EQUIV Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+
+Shifts:
+   Formula :  50
+   Var :  6
+   LEFTPAR :  13
+   DIA :  7
+   CONST :  2
+   ID :  17
+   NOT :  3
+   NNF :  9
+   BOX :  15
+   DIASTART :  18
+   BOXSTART :  5
+   METAVAR :  19
+
+
+state 33:
+   Var =>  # ID  /  { RIGHTPAR, SEMICOLON, IMP, OR, EQUIV, AND }
+   Formula =>  # DIA Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # DIASTART Index DIAEND Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # DIA Index Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # BOXSTART Index BOXEND Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # BOX Index Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # BOX Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  Formula EQUIV # Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula EQUIV Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # NNF LEFTPAR _recover_ RIGHTPAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula OR Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # NNF LEFTPAR Formula RIGHTPAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula AND Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # METAVAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # NOT Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # LEFTPAR _recover_ RIGHTPAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # CONST  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # LEFTPAR Formula RIGHTPAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Var  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula IMP Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+
+Shifts:
+   Formula :  51
+   Var :  6
+   LEFTPAR :  13
+   DIA :  7
+   CONST :  2
+   ID :  17
+   NOT :  3
+   NNF :  9
+   METAVAR :  19
+   BOXSTART :  5
+   DIASTART :  18
+   BOX :  15
+
+
+state 34:
+   Command =>  BOXEND _recover_ # SEMICOLON  /  { NNF, Formula, BOX, RETURN, BOXEND, Var, DIA, Command, BOXSTART, METAVAR, DIASTART, NOT, LEFTPAR, _recover_, CONST, ID, RIGHTPAR, EOF }
+
+Shifts:
+   SEMICOLON :  52
+
+
+state 35:
+   Formula =>  Formula # EQUIV Formula  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  Formula # IMP Formula  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  Formula # AND Formula  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  Formula # OR Formula  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Command =>  RETURN Formula # SEMICOLON  /  { NNF, Formula, BOX, RETURN, BOXEND, Var, DIA, Command, BOXSTART, METAVAR, DIASTART, NOT, LEFTPAR, _recover_, CONST, ID, RIGHTPAR, EOF }
+
+Shifts:
+   SEMICOLON :  53
+   OR :  30
+   AND :  32
+   EQUIV :  33
+   IMP :  31
+
+
+state 36:
+   Formula =>  LEFTPAR _recover_ # RIGHTPAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+
+Shifts:
+   RIGHTPAR :  54
+
+
+state 37:
+   Formula =>  Formula # IMP Formula  /  { OR, IMP, AND, EQUIV, RIGHTPAR }
+   Formula =>  Formula # AND Formula  /  { OR, IMP, AND, EQUIV, RIGHTPAR }
+   Formula =>  Formula # OR Formula  /  { OR, IMP, AND, EQUIV, RIGHTPAR }
+   Formula =>  LEFTPAR Formula # RIGHTPAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  Formula # EQUIV Formula  /  { OR, IMP, AND, EQUIV, RIGHTPAR }
+
+Shifts:
+   EQUIV :  33
+   AND :  32
+   RIGHTPAR :  55
+   OR :  30
+   IMP :  31
+
+
+state 38:
+   Command =>  _recover_ SEMICOLON #  /  { NNF, Formula, BOX, RETURN, BOXEND, Var, DIA, Command, BOXSTART, METAVAR, DIASTART, NOT, LEFTPAR, _recover_, CONST, ID, RIGHTPAR, EOF }
+
+Reductions:
+   EOF :  5
+   RIGHTPAR :  5
+   ID :  5
+   CONST :  5
+   NNF :  5
+   NOT :  5
+   Formula :  5
+   BOX :  5
+   RETURN :  5
+   BOXEND :  5
+   Var :  5
+   DIA :  5
+   _recover_ :  5
+   LEFTPAR :  5
+   Command :  5
+   BOXSTART :  5
+   METAVAR :  5
+   DIASTART :  5
+
+
+state 39:
+   Formula =>  Formula # IMP Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  Formula # AND Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  Formula # OR Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  BOX Formula #  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  Formula # EQUIV Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+
+Shifts:
+   EQUIV :  33
+   AND :  32
+   OR :  30
+   IMP :  31
+
+Reductions:
+   SEMICOLON :  19
+   EQUIV :  19
+   AND :  19
+   IMP :  19
+   OR :  19
+   RIGHTPAR :  19
+
+
+state 40:
+   Var =>  # ID  /  { RIGHTPAR, SEMICOLON, IMP, OR, EQUIV, AND }
+   Formula =>  # BOX Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # DIASTART Index DIAEND Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # DIA Index Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # BOXSTART Index BOXEND Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # BOX Index Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # DIA Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  BOX Index # Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # NNF LEFTPAR _recover_ RIGHTPAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula OR Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # NNF LEFTPAR Formula RIGHTPAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula AND Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # METAVAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # NOT Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # LEFTPAR _recover_ RIGHTPAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # CONST  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # LEFTPAR Formula RIGHTPAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Var  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula IMP Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula EQUIV Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+
+Shifts:
+   Formula :  56
+   Var :  6
+   LEFTPAR :  13
+   DIA :  7
+   CONST :  2
+   ID :  17
+   NOT :  3
+   NNF :  9
+   BOX :  15
+   DIASTART :  18
+   BOXSTART :  5
+   METAVAR :  19
+
+
+state 41:
+   Command =>  RIGHTPAR _recover_ # SEMICOLON  /  { NNF, Formula, BOX, RETURN, BOXEND, Var, DIA, Command, BOXSTART, METAVAR, DIASTART, NOT, LEFTPAR, _recover_, CONST, ID, RIGHTPAR, EOF }
+
+Shifts:
+   SEMICOLON :  57
+
+
+state 42:
+   Formula =>  DIASTART Index # DIAEND Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+
+Shifts:
+   DIAEND :  58
+
+
+state 43:
+   Var =>  # ID  /  { RIGHTPAR, SEMICOLON, IMP, OR, EQUIV, AND }
+   Formula =>  # DIA Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # BOX Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # DIASTART Index DIAEND Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # DIA Index Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # BOXSTART Index BOXEND Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # BOX Index Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # NNF LEFTPAR _recover_ RIGHTPAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula OR Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # NNF LEFTPAR Formula RIGHTPAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula AND Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # METAVAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # NOT Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # LEFTPAR _recover_ RIGHTPAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  BOXSTART Index BOXEND # Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # CONST  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # LEFTPAR Formula RIGHTPAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Var  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula IMP Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula EQUIV Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+
+Shifts:
+   Formula :  59
+   Var :  6
+   LEFTPAR :  13
+   DIA :  7
+   CONST :  2
+   ID :  17
+   BOX :  15
+   DIASTART :  18
+   BOXSTART :  5
+   METAVAR :  19
+   NNF :  9
+   NOT :  3
+
+
+state 44:
+   Formula =>  Formula # EQUIV Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  Formula # IMP Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  DIA Index Formula #  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  Formula # AND Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  Formula # OR Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+
+Shifts:
+   OR :  30
+   AND :  32
+   EQUIV :  33
+   IMP :  31
+
+Reductions:
+   SEMICOLON :  17
+   EQUIV :  17
+   AND :  17
+   IMP :  17
+   OR :  17
+   RIGHTPAR :  17
+
+
+state 45:
+   Formula =>  Formula # EQUIV Formula  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  Formula # IMP Formula  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Command =>  METAVAR BECOMES Formula # SEMICOLON  /  { NNF, Formula, BOX, RETURN, BOXEND, Var, DIA, Command, BOXSTART, METAVAR, DIASTART, NOT, LEFTPAR, _recover_, CONST, ID, RIGHTPAR, EOF }
+   Formula =>  Formula # AND Formula  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  Formula # OR Formula  /  { OR, IMP, AND, EQUIV, SEMICOLON }
+
+Shifts:
+   OR :  30
+   AND :  32
+   EQUIV :  33
+   SEMICOLON :  60
+   IMP :  31
+
+
+state 46:
+   Formula =>  NNF LEFTPAR _recover_ # RIGHTPAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+
+Shifts:
+   RIGHTPAR :  61
+
+
+state 47:
+   Formula =>  Formula # IMP Formula  /  { OR, IMP, AND, EQUIV, RIGHTPAR }
+   Formula =>  Formula # OR Formula  /  { OR, IMP, AND, EQUIV, RIGHTPAR }
+   Formula =>  Formula # AND Formula  /  { OR, IMP, AND, EQUIV, RIGHTPAR }
+   Formula =>  NNF LEFTPAR Formula # RIGHTPAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  Formula # EQUIV Formula  /  { OR, IMP, AND, EQUIV, RIGHTPAR }
+
+Shifts:
+   EQUIV :  33
+   AND :  32
+   RIGHTPAR :  62
+   OR :  30
+   IMP :  31
+
+
+state 48:
+   Formula =>  Formula # EQUIV Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  Formula # IMP Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  Formula # AND Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  Formula # OR Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  Formula OR Formula #  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+
+Shifts:
+   OR :  30
+   AND :  32
+   EQUIV :  33
+   IMP :  31
+
+Reductions:
+   SEMICOLON :  12
+   EQUIV :  12
+   AND :  12
+   IMP :  12
+   OR :  12
+   RIGHTPAR :  12
+
+
+state 49:
+   Formula =>  Formula # EQUIV Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  Formula # AND Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  Formula # OR Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  Formula # IMP Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  Formula IMP Formula #  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+
+Shifts:
+   IMP :  31
+   OR :  30
+   AND :  32
+   EQUIV :  33
+
+Reductions:
+   SEMICOLON :  13
+   EQUIV :  13
+   AND :  13
+   IMP :  13
+   OR :  13
+   RIGHTPAR :  13
+
+
+state 50:
+   Formula =>  Formula # EQUIV Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  Formula # IMP Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  Formula # OR Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  Formula # AND Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  Formula AND Formula #  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+
+Shifts:
+   AND :  32
+   EQUIV :  33
+   OR :  30
+   IMP :  31
+
+Reductions:
+   SEMICOLON :  11
+   EQUIV :  11
+   AND :  11
+   IMP :  11
+   OR :  11
+   RIGHTPAR :  11
+
+
+state 51:
+   Formula =>  Formula # IMP Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  Formula # AND Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  Formula # OR Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  Formula # EQUIV Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  Formula EQUIV Formula #  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+
+Shifts:
+   EQUIV :  33
+   AND :  32
+   OR :  30
+   IMP :  31
+
+Reductions:
+   SEMICOLON :  14
+   EQUIV :  14
+   AND :  14
+   IMP :  14
+   OR :  14
+   RIGHTPAR :  14
+
+
+state 52:
+   Command =>  BOXEND _recover_ SEMICOLON #  /  { NNF, Formula, BOX, RETURN, BOXEND, Var, DIA, Command, BOXSTART, METAVAR, DIASTART, NOT, LEFTPAR, _recover_, CONST, ID, RIGHTPAR, EOF }
+
+Reductions:
+   EOF :  7
+   RIGHTPAR :  7
+   ID :  7
+   CONST :  7
+   NNF :  7
+   NOT :  7
+   Formula :  7
+   BOX :  7
+   RETURN :  7
+   BOXEND :  7
+   Var :  7
+   DIA :  7
+   _recover_ :  7
+   LEFTPAR :  7
+   Command :  7
+   BOXSTART :  7
+   METAVAR :  7
+   DIASTART :  7
+
+
+state 53:
+   Command =>  RETURN Formula SEMICOLON #  /  { NNF, Formula, BOX, RETURN, BOXEND, Var, DIA, Command, BOXSTART, METAVAR, DIASTART, NOT, LEFTPAR, _recover_, CONST, ID, RIGHTPAR, EOF }
+
+Reductions:
+   EOF :  3
+   RIGHTPAR :  3
+   ID :  3
+   CONST :  3
+   NNF :  3
+   NOT :  3
+   Formula :  3
+   BOX :  3
+   RETURN :  3
+   BOXEND :  3
+   Var :  3
+   DIA :  3
+   _recover_ :  3
+   LEFTPAR :  3
+   Command :  3
+   BOXSTART :  3
+   METAVAR :  3
+   DIASTART :  3
+
+
+state 54:
+   Formula =>  LEFTPAR _recover_ RIGHTPAR #  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+
+Reductions:
+   SEMICOLON :  22
+   EQUIV :  22
+   AND :  22
+   IMP :  22
+   OR :  22
+   RIGHTPAR :  22
+
+
+state 55:
+   Formula =>  LEFTPAR Formula RIGHTPAR #  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+
+Reductions:
+   SEMICOLON :  21
+   EQUIV :  21
+   AND :  21
+   IMP :  21
+   OR :  21
+   RIGHTPAR :  21
+
+
+state 56:
+   Formula =>  Formula # EQUIV Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  Formula # IMP Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  Formula # AND Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  Formula # OR Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  BOX Index Formula #  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+
+Shifts:
+   OR :  30
+   AND :  32
+   EQUIV :  33
+   IMP :  31
+
+Reductions:
+   SEMICOLON :  15
+   EQUIV :  15
+   AND :  15
+   IMP :  15
+   OR :  15
+   RIGHTPAR :  15
+
+
+state 57:
+   Command =>  RIGHTPAR _recover_ SEMICOLON #  /  { NNF, Formula, BOX, RETURN, BOXEND, Var, DIA, Command, BOXSTART, METAVAR, DIASTART, NOT, LEFTPAR, _recover_, CONST, ID, RIGHTPAR, EOF }
+
+Reductions:
+   EOF :  6
+   RIGHTPAR :  6
+   ID :  6
+   CONST :  6
+   NNF :  6
+   NOT :  6
+   Formula :  6
+   BOX :  6
+   RETURN :  6
+   BOXEND :  6
+   Var :  6
+   DIA :  6
+   _recover_ :  6
+   LEFTPAR :  6
+   Command :  6
+   BOXSTART :  6
+   METAVAR :  6
+   DIASTART :  6
+
+
+state 58:
+   Var =>  # ID  /  { RIGHTPAR, SEMICOLON, IMP, OR, EQUIV, AND }
+   Formula =>  # DIA Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # BOX Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # DIASTART Index DIAEND Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # DIA Index Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # BOXSTART Index BOXEND Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # BOX Index Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # NNF LEFTPAR _recover_ RIGHTPAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula OR Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # NNF LEFTPAR Formula RIGHTPAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  DIASTART Index DIAEND # Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula AND Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # METAVAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # NOT Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # LEFTPAR _recover_ RIGHTPAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # CONST  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # LEFTPAR Formula RIGHTPAR  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Var  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula IMP Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  # Formula EQUIV Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+
+Shifts:
+   Formula :  63
+   Var :  6
+   LEFTPAR :  13
+   DIA :  7
+   CONST :  2
+   ID :  17
+   NOT :  3
+   NNF :  9
+   BOX :  15
+   DIASTART :  18
+   BOXSTART :  5
+   METAVAR :  19
+
+
+state 59:
+   Formula =>  Formula # EQUIV Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  Formula # IMP Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  BOXSTART Index BOXEND Formula #  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  Formula # AND Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  Formula # OR Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+
+Shifts:
+   OR :  30
+   AND :  32
+   EQUIV :  33
+   IMP :  31
+
+Reductions:
+   SEMICOLON :  16
+   EQUIV :  16
+   AND :  16
+   IMP :  16
+   OR :  16
+   RIGHTPAR :  16
+
+
+state 60:
+   Command =>  METAVAR BECOMES Formula SEMICOLON #  /  { NNF, Formula, BOX, RETURN, BOXEND, Var, DIA, Command, BOXSTART, METAVAR, DIASTART, NOT, LEFTPAR, _recover_, CONST, ID, RIGHTPAR, EOF }
+
+Reductions:
+   EOF :  4
+   RIGHTPAR :  4
+   ID :  4
+   CONST :  4
+   NNF :  4
+   NOT :  4
+   Formula :  4
+   BOX :  4
+   RETURN :  4
+   BOXEND :  4
+   Var :  4
+   DIA :  4
+   _recover_ :  4
+   LEFTPAR :  4
+   Command :  4
+   BOXSTART :  4
+   METAVAR :  4
+   DIASTART :  4
+
+
+state 61:
+   Formula =>  NNF LEFTPAR _recover_ RIGHTPAR #  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+
+Reductions:
+   SEMICOLON :  25
+   EQUIV :  25
+   AND :  25
+   IMP :  25
+   OR :  25
+   RIGHTPAR :  25
+
+
+state 62:
+   Formula =>  NNF LEFTPAR Formula RIGHTPAR #  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+
+Reductions:
+   SEMICOLON :  24
+   EQUIV :  24
+   AND :  24
+   IMP :  24
+   OR :  24
+   RIGHTPAR :  24
+
+
+state 63:
+   Formula =>  Formula # EQUIV Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  Formula # IMP Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  Formula # AND Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  DIASTART Index DIAEND Formula #  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+   Formula =>  Formula # OR Formula  /  { RIGHTPAR, OR, IMP, AND, EQUIV, SEMICOLON }
+
+Shifts:
+   OR :  30
+   AND :  32
+   EQUIV :  33
+   IMP :  31
+
+Reductions:
+   SEMICOLON :  18
+   EQUIV :  18
+   AND :  18
+   IMP :  18
+   OR :  18
+   RIGHTPAR :  18
+
+
+
+
+note that there are warnings
+
+symbol definition will be put in ./symbol.h and ./symbol.cpp
+
+opening file ../idee.x
+parser definition will be put in ./parser.h and ./parser.cpp
+

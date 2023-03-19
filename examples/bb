@@ -1,0 +1,126 @@
+
+Rules:
+
+#0 :   S  =>  a, S, a
+#1 :   S  =>  A
+#2 :   A  =>  b, a, b, S
+#3 :   A  =>  b, S, b
+
+
+
+
+input was read succesfully
+symbols that are used without declaration: { A, S, b, a, EOF }
+Parsetable:
+====================================
+
+Initial States:
+   S : S0
+
+
+S0:
+   S =>  # a S a      [ 0 ] / { EOF }
+   S =>  # A      [ 1 ] / { EOF }
+
+
+
+after closure
+Parsetable:
+====================================
+
+Initial States:
+   S : S0
+
+
+S0:
+   S =>  # a S a      [ 0 ] / { EOF }
+   S =>  # A      [ 1 ] / { EOF }
+
+Shifts:
+   S : 11
+   a : 3
+   A : 2
+   b : 1
+
+
+S1:
+   A =>  b # S b      [ 3 ] / { a, b, EOF }
+   A =>  b # a b S      [ 2 ] / { a, b, EOF }
+
+Shifts:
+   S : 5
+   A : 2
+   a : 4
+   b : 1
+
+
+S2:
+   S =>  A #      [ 1 ] / { a, b, EOF }
+
+S3:
+   S =>  a # S a      [ 0 ] / { a, EOF }
+
+Shifts:
+   S : 6
+   A : 2
+   a : 3
+   b : 1
+
+
+S4:
+   A =>  b a # b S      [ 2 ] / { b, a, EOF }
+   S =>  a # S a      [ 0 ] / { a, EOF, b }
+
+Shifts:
+   b : 7
+   S : 6
+   A : 2
+   a : 3
+
+
+S5:
+   A =>  b S # b      [ 3 ] / { a, b, EOF }
+
+Shifts:
+   b : 8
+
+
+S6:
+   S =>  a S # a      [ 0 ] / { a, b, EOF }
+
+Shifts:
+   a : 9
+
+
+S7:
+   A =>  b a b # S      [ 2 ] / { b, a, EOF }
+   A =>  b # S b      [ 3 ] / { a }
+   A =>  b # a b S      [ 2 ] / { a }
+
+Shifts:
+   S : 10
+   A : 2
+   a : 4
+   b : 1
+
+
+S8:
+   A =>  b S b #      [ 3 ] / { b, a, EOF }
+
+S9:
+   S =>  a S a #      [ 0 ] / { a, EOF, b }
+
+S10:
+   A =>  b a b S #      [ 2 ] / { b, a, EOF }
+   A =>  b S # b      [ 3 ] / { a }
+
+Shifts:
+   b : 8
+
+
+S11:
+
+
+
+(because of errors, no code will be generated)
+

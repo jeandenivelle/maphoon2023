@@ -1,0 +1,11 @@
+
+solve
+solve.cpp
+token.cpp
+filereader.cpp
+symbol.cpp
+tokenizer.cpp
+parser.cpp
+../../lexing2022/stateset.cpp
+../../lexing2022/partition.cpp
+

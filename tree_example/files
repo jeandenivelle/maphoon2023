@@ -1,0 +1,12 @@
+
+main
+
+main.cpp
+tree.cpp
+symbol.cpp
+tokenizing.cpp
+topdownparser.cpp
+parser.cpp
+../../easycomp2022a/bigint.cpp
+../filereader.cpp
+

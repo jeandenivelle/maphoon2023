@@ -1,0 +1,33 @@
+
+about these parser generator tools. 
+
+I created maphoon in 2007 and because of this I would like to use 
+it in our project, and publish it. If in the end maybe 150 people will use
+it like we used CUP in compiler construction, it will be worth 
+that we spend some time to it. 
+
+These are the options: 
+1. Make maphoon the best parser generator in the world, 
+   use it, and publish it.
+2. or admit that another parser generator is the best parser generator in
+   the world, use it for our project, and completely forget about maphoon.
+
+We must have a serious look at possible other parser generators, and then
+decide. 
+I think the real competitors are BisonC++ and BisonC. So please
+have a serious look at these. If you find others, please also look at those. 
+
+We certainly need a parser generator tool for our project, so either we use
+maphoon and make it publishable, or we don't use it, abandon it, 
+and use something else.
+
+Selection criteria are:
+- bottom up (LALR)
+- good treatment of polymorphic attributes. User of parser should not
+  have to worry about memory management. 
+- Nice user interface. 
+- Convenient Installation.
+
+
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License 
+
