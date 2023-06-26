@@ -56,7 +56,7 @@ int main( int argc, char* argv[] )
       std::cout << "3. exact name of the idee.x file\n";
       std::cout << "   (if 2 and 3 are absent, no code will be generated)\n"; 
       std::cout << "\n";
-      exit(0);
+      exit(-1);
    }
 
    std::string inputfilename = argv[1];
@@ -66,14 +66,14 @@ int main( int argc, char* argv[] )
        inputfilename[ inputfilename. size( ) - 2 ] != '.' )
    {
       std::cout << "inputfile " << inputfilename << " must end in .m or .M\n";
-      exit(0);
+      exit(-1);
    }
 
    std::ifstream inputfile( inputfilename );
    if( !inputfile )
    {
       std::cout << "could not not open " << inputfilename << " for reading\n";
-      exit(0);
+      exit(-1);
    }
 
    symbolcodebuilder bld_sym( cpp::nspace( ), cpp::type( { "void" } )); 
@@ -221,12 +221,12 @@ int main( int argc, char* argv[] )
    catch( const syntaxerror& synt ) 
    {
       std::cout << synt << "\n\n"; 
-      exit(0);
+      exit(-1);
    }
    catch( const generalerror& gen )
    {
       std::cout << gen << "\n";
-      exit(0); 
+      exit(-1); 
    }
 
    std::cout << bld_sym << "\n";
@@ -570,7 +570,7 @@ int main( int argc, char* argv[] )
          for( const auto& err: errors )
             std::cout << "   " << err. str( ) << "\n";
          std::cout << "\n";
-         return 1;
+         return -1;
       }
 
       std::vector< conflict > conflicts;
@@ -592,7 +592,7 @@ int main( int argc, char* argv[] )
       catch( const ideeproblem& pr )
       {
          std::cout << pr << "\n";
-         exit(0);
+         exit(-1);
       }
    } 
 
