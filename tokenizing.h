@@ -8,7 +8,7 @@
 #include <map>
 
 #include "indentation.h"
-#include "../lexing2023/includes.h"
+#include "lexing2023/includes.h"
 
 
 enum token { tok_rewrite,         // =>

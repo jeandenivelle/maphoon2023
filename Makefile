@@ -1,92 +1,81 @@
 
 # Automatically generated Makefile
-# Makefile-generator programmed by Hans de Nivelle, 2002
+# Makefile-generator created by Hans de Nivelle, 2023
 
+# Project: Maphoon
 
-Flags = -Wpedantic -pedantic-errors -std=c++20
-CPP = g++ -O3 -flto
+CPP = g++
 
+Lexing = /home/nivelle/gitted
 
-maphoon : Makefile   maphoon.o ../lexing2023/filereader.o tokenizing.o ourownparser.o symbol.o errors.o rule.o grammar.o expectation.o itemsets.o parsetable.o symbolcodebuilder.o parsercodebuilder.o tablecodebuilder.o cpp/type.o cpp/nspace.o cpp/identifier.o cpp/codefragment.o ../lexing2023/stateset.o ../lexing2023/partition.o 
-	$(CPP) $(Flags) -o maphoon   maphoon.o ../lexing2023/filereader.o tokenizing.o ourownparser.o symbol.o errors.o rule.o grammar.o expectation.o itemsets.o parsetable.o symbolcodebuilder.o parsercodebuilder.o tablecodebuilder.o cpp/type.o cpp/nspace.o cpp/identifier.o cpp/codefragment.o ../lexing2023/stateset.o ../lexing2023/partition.o 
+Libs =
 
-maphoon.o : Makefile   maphoon.cpp   parsercodebuilder.h symbolcodebuilder.h cpp/codefragment.h cpp/nspace.h cpp/type.h errors.h itemsets.h symbolset.h symbol.h rule.h grammar.h indentation.h parsetable.h expectation.h cpp/identifier.h ourownparser.h tokenizing.h ../lexing2023/includes.h ../lexing2023/filereader.h ../lexing2023/viewreader.h ../lexing2023/acceptor.h ../lexing2023/flatmap.h ../lexing2023/state.h ../lexing2023/minmax.h ../lexing2023/classifier.h ../lexing2023/algorithms.h ../lexing2023/stateset.h ../lexing2023/minimization.h ../lexing2023/partition.h ../lexing2023/reachfunc.h ../lexing2023/comp.h ../lexing2023/generators.h ../lexing2023/indentation.h ../lexing2023/deterministic.h 
-	$(CPP) -c $(Flags) maphoon.cpp -o  maphoon.o
+Options = -Wall -pedantic -pedantic-errors -std=c++20 -O3 -flto
 
+# Linking:
 
-../lexing2023/filereader.o : Makefile   ../lexing2023/filereader.cpp   ../lexing2023/filereader.h 
-	$(CPP) -c $(Flags) ../lexing2023/filereader.cpp -o  ../lexing2023/filereader.o
+maphoon : errors.o expectation.o grammar.o itemsets.o maphoon.o ourownparser.o parsercodebuilder.o parsetable.o rule.o symbolcodebuilder.o symbol.o tablecodebuilder.o tokenizing.o cpp/codefragment.o cpp/identifier.o cpp/nspace.o cpp/type.o $(Lexing)/lexing2023/stateset.o $(Lexing)/lexing2023/filereader.o $(Lexing)/lexing2023/partition.o
+	$(CPP) $(Options) -o maphoon errors.o expectation.o grammar.o itemsets.o maphoon.o ourownparser.o parsercodebuilder.o parsetable.o rule.o symbolcodebuilder.o symbol.o tablecodebuilder.o tokenizing.o cpp/codefragment.o cpp/identifier.o cpp/nspace.o cpp/type.o $(Lexing)/lexing2023/stateset.o $(Lexing)/lexing2023/filereader.o $(Lexing)/lexing2023/partition.o $(Libs)
 
+# Compiling the source files:
 
-tokenizing.o : Makefile   tokenizing.cpp   tokenizing.h indentation.h ../lexing2023/includes.h ../lexing2023/filereader.h ../lexing2023/viewreader.h ../lexing2023/acceptor.h ../lexing2023/flatmap.h ../lexing2023/state.h ../lexing2023/minmax.h ../lexing2023/classifier.h ../lexing2023/algorithms.h ../lexing2023/stateset.h ../lexing2023/minimization.h ../lexing2023/partition.h ../lexing2023/reachfunc.h ../lexing2023/comp.h ../lexing2023/generators.h ../lexing2023/indentation.h ../lexing2023/deterministic.h 
-	$(CPP) -c $(Flags) tokenizing.cpp -o  tokenizing.o
+errors.o : errors.cpp errors.h grammar.h itemsets.h rule.h symbol.h symbolset.h
+	$(CPP) -c $(Options) errors.cpp -o errors.o -I $(Lexing)
 
+expectation.o : expectation.cpp expectation.h symbol.h symbolset.h
+	$(CPP) -c $(Options) expectation.cpp -o expectation.o -I $(Lexing)
 
-ourownparser.o : Makefile   ourownparser.cpp   errors.h itemsets.h symbolset.h symbol.h rule.h grammar.h ourownparser.h tokenizing.h indentation.h ../lexing2023/includes.h ../lexing2023/filereader.h ../lexing2023/viewreader.h ../lexing2023/acceptor.h ../lexing2023/flatmap.h ../lexing2023/state.h ../lexing2023/minmax.h ../lexing2023/classifier.h ../lexing2023/algorithms.h ../lexing2023/stateset.h ../lexing2023/minimization.h ../lexing2023/partition.h ../lexing2023/reachfunc.h ../lexing2023/comp.h ../lexing2023/generators.h ../lexing2023/indentation.h ../lexing2023/deterministic.h symbolcodebuilder.h cpp/codefragment.h cpp/nspace.h cpp/type.h parsercodebuilder.h parsetable.h expectation.h cpp/identifier.h 
-	$(CPP) -c $(Flags) ourownparser.cpp -o  ourownparser.o
+grammar.o : grammar.cpp grammar.h rule.h symbol.h symbolset.h
+	$(CPP) -c $(Options) grammar.cpp -o grammar.o -I $(Lexing)
 
+itemsets.o : itemsets.cpp grammar.h itemsets.h rule.h symbol.h symbolset.h
+	$(CPP) -c $(Options) itemsets.cpp -o itemsets.o -I $(Lexing)
 
-symbol.o : Makefile   symbol.cpp   symbol.h 
-	$(CPP) -c $(Flags) symbol.cpp -o  symbol.o
+maphoon.o : maphoon.cpp cpp/codefragment.h cpp/identifier.h cpp/nspace.h cpp/type.h errors.h expectation.h grammar.h indentation.h itemsets.h ourownparser.h parsercodebuilder.h parsetable.h rule.h symbol.h symbolcodebuilder.h symbolset.h tokenizing.h $(Lexing)/lexing2023/acceptor.h $(Lexing)/lexing2023/algorithms.h $(Lexing)/lexing2023/classifier.h $(Lexing)/lexing2023/comp.h $(Lexing)/lexing2023/deterministic.h $(Lexing)/lexing2023/filereader.h $(Lexing)/lexing2023/flatmap.h $(Lexing)/lexing2023/generators.h $(Lexing)/lexing2023/includes.h $(Lexing)/lexing2023/indentation.h $(Lexing)/lexing2023/minimization.h $(Lexing)/lexing2023/minmax.h $(Lexing)/lexing2023/partition.h $(Lexing)/lexing2023/reachfunc.h $(Lexing)/lexing2023/state.h $(Lexing)/lexing2023/stateset.h $(Lexing)/lexing2023/viewreader.h
+	$(CPP) -c $(Options) maphoon.cpp -o maphoon.o -I $(Lexing)
 
+ourownparser.o : ourownparser.cpp cpp/codefragment.h cpp/identifier.h cpp/nspace.h cpp/type.h errors.h expectation.h grammar.h indentation.h itemsets.h ourownparser.h parsercodebuilder.h parsetable.h rule.h symbol.h symbolcodebuilder.h symbolset.h tokenizing.h $(Lexing)/lexing2023/acceptor.h $(Lexing)/lexing2023/algorithms.h $(Lexing)/lexing2023/classifier.h $(Lexing)/lexing2023/comp.h $(Lexing)/lexing2023/deterministic.h $(Lexing)/lexing2023/filereader.h $(Lexing)/lexing2023/flatmap.h $(Lexing)/lexing2023/generators.h $(Lexing)/lexing2023/includes.h $(Lexing)/lexing2023/indentation.h $(Lexing)/lexing2023/minimization.h $(Lexing)/lexing2023/minmax.h $(Lexing)/lexing2023/partition.h $(Lexing)/lexing2023/reachfunc.h $(Lexing)/lexing2023/state.h $(Lexing)/lexing2023/stateset.h $(Lexing)/lexing2023/viewreader.h
+	$(CPP) -c $(Options) ourownparser.cpp -o ourownparser.o -I $(Lexing)
 
-errors.o : Makefile   errors.cpp   errors.h itemsets.h symbolset.h symbol.h rule.h grammar.h 
-	$(CPP) -c $(Flags) errors.cpp -o  errors.o
+parsercodebuilder.o : parsercodebuilder.cpp cpp/codefragment.h cpp/identifier.h cpp/nspace.h cpp/type.h errors.h expectation.h grammar.h indentation.h itemsets.h parsercodebuilder.h parsetable.h rule.h symbol.h symbolcodebuilder.h symbolset.h tablecodebuilder.h
+	$(CPP) -c $(Options) parsercodebuilder.cpp -o parsercodebuilder.o -I $(Lexing)
 
+parsetable.o : parsetable.cpp grammar.h itemsets.h parsetable.h rule.h symbol.h symbolset.h
+	$(CPP) -c $(Options) parsetable.cpp -o parsetable.o -I $(Lexing)
 
-rule.o : Makefile   rule.cpp   rule.h symbol.h 
-	$(CPP) -c $(Flags) rule.cpp -o  rule.o
+rule.o : rule.cpp rule.h symbol.h
+	$(CPP) -c $(Options) rule.cpp -o rule.o -I $(Lexing)
 
+symbolcodebuilder.o : symbolcodebuilder.cpp cpp/codefragment.h cpp/nspace.h cpp/type.h errors.h grammar.h indentation.h itemsets.h rule.h symbol.h symbolcodebuilder.h symbolset.h
+	$(CPP) -c $(Options) symbolcodebuilder.cpp -o symbolcodebuilder.o -I $(Lexing)
 
-grammar.o : Makefile   grammar.cpp   grammar.h rule.h symbol.h symbolset.h 
-	$(CPP) -c $(Flags) grammar.cpp -o  grammar.o
+symbol.o : symbol.cpp symbol.h
+	$(CPP) -c $(Options) symbol.cpp -o symbol.o -I $(Lexing)
 
+tablecodebuilder.o : tablecodebuilder.cpp cpp/nspace.h expectation.h grammar.h itemsets.h parsetable.h rule.h symbol.h symbolset.h tablecodebuilder.h
+	$(CPP) -c $(Options) tablecodebuilder.cpp -o tablecodebuilder.o -I $(Lexing)
 
-expectation.o : Makefile   expectation.cpp   expectation.h symbolset.h symbol.h 
-	$(CPP) -c $(Flags) expectation.cpp -o  expectation.o
+tokenizing.o : tokenizing.cpp indentation.h tokenizing.h $(Lexing)/lexing2023/acceptor.h $(Lexing)/lexing2023/algorithms.h $(Lexing)/lexing2023/classifier.h $(Lexing)/lexing2023/comp.h $(Lexing)/lexing2023/deterministic.h $(Lexing)/lexing2023/filereader.h $(Lexing)/lexing2023/flatmap.h $(Lexing)/lexing2023/generators.h $(Lexing)/lexing2023/includes.h $(Lexing)/lexing2023/indentation.h $(Lexing)/lexing2023/minimization.h $(Lexing)/lexing2023/minmax.h $(Lexing)/lexing2023/partition.h $(Lexing)/lexing2023/reachfunc.h $(Lexing)/lexing2023/state.h $(Lexing)/lexing2023/stateset.h $(Lexing)/lexing2023/viewreader.h
+	$(CPP) -c $(Options) tokenizing.cpp -o tokenizing.o -I $(Lexing)
 
+cpp/codefragment.o : cpp/codefragment.cpp cpp/codefragment.h
+	$(CPP) -c $(Options) cpp/codefragment.cpp -o cpp/codefragment.o -I $(Lexing)
 
-itemsets.o : Makefile   itemsets.cpp   itemsets.h symbolset.h symbol.h rule.h grammar.h 
-	$(CPP) -c $(Flags) itemsets.cpp -o  itemsets.o
+cpp/identifier.o : cpp/identifier.cpp cpp/identifier.h
+	$(CPP) -c $(Options) cpp/identifier.cpp -o cpp/identifier.o -I $(Lexing)
 
+cpp/nspace.o : cpp/nspace.cpp cpp/identifier.h cpp/nspace.h
+	$(CPP) -c $(Options) cpp/nspace.cpp -o cpp/nspace.o -I $(Lexing)
 
-parsetable.o : Makefile   parsetable.cpp   parsetable.h itemsets.h symbolset.h symbol.h rule.h grammar.h 
-	$(CPP) -c $(Flags) parsetable.cpp -o  parsetable.o
+cpp/type.o : cpp/type.cpp cpp/type.h
+	$(CPP) -c $(Options) cpp/type.cpp -o cpp/type.o -I $(Lexing)
 
+$(Lexing)/lexing2023/stateset.o : $(Lexing)/lexing2023/stateset.cpp $(Lexing)/lexing2023/state.h $(Lexing)/lexing2023/stateset.h
+	$(CPP) -c $(Options) $(Lexing)/lexing2023/stateset.cpp -o $(Lexing)/lexing2023/stateset.o -I $(Lexing)
 
-symbolcodebuilder.o : Makefile   symbolcodebuilder.cpp   indentation.h symbolcodebuilder.h cpp/codefragment.h cpp/nspace.h cpp/type.h errors.h itemsets.h symbolset.h symbol.h rule.h grammar.h 
-	$(CPP) -c $(Flags) symbolcodebuilder.cpp -o  symbolcodebuilder.o
+$(Lexing)/lexing2023/filereader.o : $(Lexing)/lexing2023/filereader.cpp $(Lexing)/lexing2023/filereader.h
+	$(CPP) -c $(Options) $(Lexing)/lexing2023/filereader.cpp -o $(Lexing)/lexing2023/filereader.o -I $(Lexing)
 
-
-parsercodebuilder.o : Makefile   parsercodebuilder.cpp   tablecodebuilder.h symbol.h symbolset.h parsetable.h itemsets.h rule.h grammar.h cpp/nspace.h expectation.h errors.h parsercodebuilder.h symbolcodebuilder.h cpp/codefragment.h cpp/type.h indentation.h cpp/identifier.h 
-	$(CPP) -c $(Flags) parsercodebuilder.cpp -o  parsercodebuilder.o
-
-
-tablecodebuilder.o : Makefile   tablecodebuilder.cpp   tablecodebuilder.h symbol.h symbolset.h parsetable.h itemsets.h rule.h grammar.h cpp/nspace.h expectation.h 
-	$(CPP) -c $(Flags) tablecodebuilder.cpp -o  tablecodebuilder.o
-
-
-cpp/type.o : Makefile   cpp/type.cpp   cpp/type.h 
-	$(CPP) -c $(Flags) cpp/type.cpp -o  cpp/type.o
-
-
-cpp/nspace.o : Makefile   cpp/nspace.cpp   cpp/identifier.h cpp/nspace.h 
-	$(CPP) -c $(Flags) cpp/nspace.cpp -o  cpp/nspace.o
-
-
-cpp/identifier.o : Makefile   cpp/identifier.cpp   cpp/identifier.h 
-	$(CPP) -c $(Flags) cpp/identifier.cpp -o  cpp/identifier.o
-
-
-cpp/codefragment.o : Makefile   cpp/codefragment.cpp   cpp/codefragment.h 
-	$(CPP) -c $(Flags) cpp/codefragment.cpp -o  cpp/codefragment.o
-
-
-../lexing2023/stateset.o : Makefile   ../lexing2023/stateset.cpp   ../lexing2023/stateset.h ../lexing2023/state.h 
-	$(CPP) -c $(Flags) ../lexing2023/stateset.cpp -o  ../lexing2023/stateset.o
-
-
-../lexing2023/partition.o : Makefile   ../lexing2023/partition.cpp   ../lexing2023/partition.h ../lexing2023/stateset.h ../lexing2023/state.h 
-	$(CPP) -c $(Flags) ../lexing2023/partition.cpp -o  ../lexing2023/partition.o
-
+$(Lexing)/lexing2023/partition.o : $(Lexing)/lexing2023/partition.cpp $(Lexing)/lexing2023/partition.h $(Lexing)/lexing2023/state.h $(Lexing)/lexing2023/stateset.h
+	$(CPP) -c $(Options) $(Lexing)/lexing2023/partition.cpp -o $(Lexing)/lexing2023/partition.o -I $(Lexing)
 

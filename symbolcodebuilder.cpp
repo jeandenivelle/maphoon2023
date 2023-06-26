@@ -155,7 +155,7 @@ void symbolcodebuilder::print_print_attr( std::ostream& out ) const
    out << ind << "}\n\n";
 
    out << ind << "template< typename Iter > \n";
-   out << ind << "void print_range( Iter i0, Iter i1, std::ostream& out )\n";
+   out << ind << "void print_range( Iter i0, Iter i1, char c0, char c1, std::ostream& out )\n";
    out << ind << "{\n";
    out << ind << "   out << '{';\n";
    out << ind << "   for( auto it = i0; it != i1; ++ it )\n";
@@ -347,7 +347,7 @@ void symbolcodebuilder::print_cpp_file( std::ostream& out ) const
       ind += 3;
 
       out << ind << "template< typename Iter > \n";
-      out << ind << "void print_range( Iter i0, Iter i1, std::ostream& out );\n\n";
+      out << ind << "void print_range( Iter i0, Iter i1, char c0, char c1, std::ostream& out );\n\n";
 
       code_cpp. printascode( out );
       ind -= 3;

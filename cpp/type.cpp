@@ -16,7 +16,8 @@ bool cpp::type::islight( ) const
    size_t i = 0;
    while( i < repr. size( ) && 
           ( repr[i] == "short" || repr[i] == "long" || 
-            repr[i] == "unsigned" || repr[i] == "signed" ))
+            repr[i] == "unsigned" || repr[i] == "signed" ||
+            repr[i] == "const" ))
    {
       ++ i;
    }
@@ -26,9 +27,12 @@ bool cpp::type::islight( ) const
  
    if( i + 1 == repr. size( ))
    { 
-      return repr[i] == "bool" || repr[i] == "char" || 
-             repr[i] == "int" || repr[i] == "float" ||
-             repr[i] == "double" || repr[i] == "size_t"; 
+      const static std::unordered_set< std::string > lighttypes =
+         { "bool", "char", "int", "float", "double", "size_t",
+           "int8_t", "int16_t", "int32_t", "int64_t",
+           "uint8_t", "uint16_t", "uint32_t", "uint64_t" };
+
+      return lighttypes. contains( repr[i] );
    }
 
    return false; 
